@@ -3,7 +3,7 @@ name: prd-generator
 description: "Creates clear, testable, implementation-ready Product Requirements Documents (PRDs) from rough ideas, briefs, conversations, existing documentation, or accessible project evidence. Use when planning a new product, application, website, API, or feature; defining an MVP; turning notes into user stories, functional requirements, and acceptance criteria; auditing or improving an existing PRD; or preparing requirements before design, development, or AI coding-agent handoff. Produces scoped requirements with stable IDs, business rules, data and non-functional requirements, risks, assumptions, open questions, and traceability. Complete when needed, concise when possible, and never fills unknown details with invented facts."
 ---
 
-# Skill: PRD Generator
+# PRD Generator
 
 ## 1. Role and Mission
 

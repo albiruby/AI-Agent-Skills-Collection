@@ -1,6 +1,6 @@
 ---
 name: consistency-qa-reviewer
-description: Reviews generated images against the style bible with a scored checklist - style, palette, identity, scale, camera, technical cleanliness, theme, text artifacts, sheet geometry - and returns a PASS, FIX or REGENERATE verdict with specific differences. Use after any generation batch, on probe images before mass production, when the user asks "is this consistent", "check these images", or uploads outputs for comparison. Written for Gemini image generation (Nano Banana family, Imagen) in the Gemini app, AI Studio, API, Google Flow and Gemini CLI.
+description: Reviews generated images against the style bible with a scored checklist - style, palette, identity, scale, camera, technical cleanliness, theme, text artifacts, sheet geometry - and returns a PASS, FIX or REGENERATE verdict with specific differences. Use after any generation batch, on probe images before mass production, when the user asks "is this consistent", "check these images", or uploads outputs for comparison. Written for Gemini image generation (Nano Banana family, Imagen) in the Gemini app, AI Studio, API, Google Flow and Gemini CLI. Use when a batch needs a scored PASS, FIX, or REGENERATE verdict against the locked bible, or when recurring drift, sheet geometry errors, and stray text artifacts must be logged before the next round.
 ---
 
 # Consistency QA Reviewer

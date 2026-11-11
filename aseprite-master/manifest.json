@@ -1,0 +1,34 @@
+{
+  "pack": "Aseprite Master Skill Pack",
+  "version": "1.1.0",
+  "skill_file_count": 18,
+  "skill_files": [
+    "SKILL.md",
+    "skills/aseprite-animation-blueprints/SKILL.md",
+    "skills/aseprite-animation-studio/SKILL.md",
+    "skills/aseprite-art-direction/SKILL.md",
+    "skills/aseprite-sprite-consistency/SKILL.md",
+    "skills/aseprite-delivery-documentation/SKILL.md",
+    "skills/aseprite-export-pipeline/SKILL.md",
+    "skills/aseprite-game-engine-handoff/SKILL.md",
+    "skills/aseprite-mcp-benchmark-recovery/SKILL.md",
+    "skills/aseprite-mcp-operations/SKILL.md",
+    "skills/aseprite-pixel-level-editing/SKILL.md",
+    "skills/aseprite-production-planning/SKILL.md",
+    "skills/aseprite-prompt-design/SKILL.md",
+    "skills/aseprite-qa-debugging/SKILL.md",
+    "skills/aseprite-reference-to-sprite/SKILL.md",
+    "skills/aseprite-sprite-generation/SKILL.md",
+    "skills/aseprite-tilesets-environments/SKILL.md",
+    "skills/aseprite-vfx-animation/SKILL.md"
+  ],
+  "templates": [
+    "templates/agent-task-template.md",
+    "templates/animation-plan.md",
+    "templates/asset-brief.md",
+    "templates/character-bible.md",
+    "templates/mcp-capability-report.md",
+    "templates/qa-checklist.md"
+  ],
+  "note": "Generic SKILL.md format; MCP tools and arguments must be discovered from the connected server."
+}

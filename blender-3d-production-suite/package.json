@@ -1,0 +1,85 @@
+{
+  "package": "blender-3d-production-suite",
+  "version": "2.0.0",
+  "format": "Agent Skills open standard",
+  "compatibility": "Harness-neutral SKILL.md content; install to the path documented by the target harness.",
+  "skill_count": 19,
+  "skills": [
+    {
+      "name": "blender-3d-studio-director",
+      "path": "skills/blender-3d-studio-director/SKILL.md"
+    },
+    {
+      "name": "blender-animation-director",
+      "path": "skills/blender-animation-director/SKILL.md"
+    },
+    {
+      "name": "blender-asset-optimization-export",
+      "path": "skills/blender-asset-optimization-export/SKILL.md"
+    },
+    {
+      "name": "blender-concept-art-director",
+      "path": "skills/blender-concept-art-director/SKILL.md"
+    },
+    {
+      "name": "blender-environment-worldbuilder",
+      "path": "skills/blender-environment-worldbuilder/SKILL.md"
+    },
+    {
+      "name": "blender-geometry-nodes-specialist",
+      "path": "skills/blender-geometry-nodes-specialist/SKILL.md"
+    },
+    {
+      "name": "blender-lighting-lookdev",
+      "path": "skills/blender-lighting-lookdev/SKILL.md"
+    },
+    {
+      "name": "blender-material-texturing-specialist",
+      "path": "skills/blender-material-texturing-specialist/SKILL.md"
+    },
+    {
+      "name": "blender-modeling-specialist",
+      "path": "skills/blender-modeling-specialist/SKILL.md"
+    },
+    {
+      "name": "blender-python-automation-engineer",
+      "path": "skills/blender-python-automation-engineer/SKILL.md"
+    },
+    {
+      "name": "blender-qa-delivery-engineer",
+      "path": "skills/blender-qa-delivery-engineer/SKILL.md"
+    },
+    {
+      "name": "blender-render-compositing",
+      "path": "skills/blender-render-compositing/SKILL.md"
+    },
+    {
+      "name": "blender-rigging-skinning-specialist",
+      "path": "skills/blender-rigging-skinning-specialist/SKILL.md"
+    },
+    {
+      "name": "blender-scene-project-pipeline",
+      "path": "skills/blender-scene-project-pipeline/SKILL.md"
+    },
+    {
+      "name": "blender-sculpting-specialist",
+      "path": "skills/blender-sculpting-specialist/SKILL.md"
+    },
+    {
+      "name": "blender-simulation-fx-specialist",
+      "path": "skills/blender-simulation-fx-specialist/SKILL.md"
+    },
+    {
+      "name": "blender-tool-interface-operator",
+      "path": "skills/blender-tool-interface-operator/SKILL.md"
+    },
+    {
+      "name": "blender-topology-retopology",
+      "path": "skills/blender-topology-retopology/SKILL.md"
+    },
+    {
+      "name": "blender-uv-baking-specialist",
+      "path": "skills/blender-uv-baking-specialist/SKILL.md"
+    }
+  ]
+}

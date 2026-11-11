@@ -1,6 +1,6 @@
 ---
 name: asset-postprocess-handoff
-description: Post-processes generated images into production-ready assets and hands them off - crop, key-color background removal with fringe cleanup, nearest-neighbor downscale, palette snapping, sheet slicing, baseline alignment, naming, atlas metadata, folder structure and provenance notes. Use after image generation when assets must go into a game, app, website or print workflow, or when the user asks how to clean up, slice, or export AI-generated sprites and images. Written for Gemini image generation (Nano Banana family, Imagen) in the Gemini app, AI Studio, API, Google Flow and Gemini CLI.
+description: Post-processes generated images into production-ready assets and hands them off - crop, key-color background removal with fringe cleanup, nearest-neighbor downscale, palette snapping, sheet slicing, baseline alignment, naming, atlas metadata, folder structure and provenance notes. Use after image generation when assets must go into a game, app, website or print workflow, or when the user asks how to clean up, slice, or export AI-generated sprites and images. Written for Gemini image generation (Nano Banana family, Imagen) in the Gemini app, AI Studio, API, Google Flow and Gemini CLI. Use when the pink key-color background still shows, sheet frames come out unequal or misaligned, or generated images must be exported into an assets folder with manifest naming, atlas JSON, and provenance notes for handoff.
 ---
 
 # Asset Post-Process & Handoff

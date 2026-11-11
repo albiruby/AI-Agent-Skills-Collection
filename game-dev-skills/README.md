@@ -3,7 +3,7 @@
 A complete, engine-agnostic set of **SKILL.md** files for AI agents (Claude, GPT, Gemini, local LLMs, coding agents) covering the full game development lifecycle: concept -> engine & tech stack -> design -> art/audio/UI -> systems -> platforms -> QA -> monetization -> launch.
 
 ## How to use
-1. Start with `00-game-dev-orchestrator` (it routes to everything else).
+1. Start with `game-dev-orchestrator` (it routes to everything else).
 2. Load only the skills relevant to the current phase to save context.
 3. Outputs chain: PROJECT_BRIEF -> GDD -> engine/stack -> task plan -> implementation.
 
@@ -37,4 +37,4 @@ A complete, engine-agnostic set of **SKILL.md** files for AI agents (Claude, GPT
 ## Notes
 - Engine versions, store fees, policies and laws change: always verify current sources.
 - Legal/compliance sections are guidance, not legal advice.
-- License: add your preferred open-source license (MIT recommended).
+- License: MIT (see [`LICENSE`](../LICENSE)).

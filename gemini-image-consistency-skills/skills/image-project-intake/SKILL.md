@@ -1,6 +1,6 @@
 ---
 name: image-project-intake
-description: Captures the project brief before any image generation - purpose, audience, subject, deliverables, platform, aspect ratios, constraints, existing references. Use at the start of any image-set, brand visual, game art, illustration series or "make me consistent images" request, and whenever the user gives a vague visual goal that needs to be pinned down. Produces PROJECT_BRIEF with explicit assumptions. Written for Gemini image generation (Nano Banana family, Imagen) in the Gemini app, AI Studio, API, Google Flow and Gemini CLI.
+description: Captures the project brief before any image generation - purpose, audience, subject, deliverables, platform, aspect ratios, constraints, existing references. Use at the start of any image-set, brand visual, game art, illustration series or "make me consistent images" request, and whenever the user gives a vague visual goal that needs to be pinned down. Produces PROJECT_BRIEF with explicit assumptions. Written for Gemini image generation (Nano Banana family, Imagen) in the Gemini app, AI Studio, API, Google Flow and Gemini CLI. Use when the goal is still a vague wish and a PROJECT_BRIEF must be produced first, with six core questions, sensible defaults marked [assumed], and a forbidden-content list.
 ---
 
 # Image Project Intake

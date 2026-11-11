@@ -1,0 +1,23 @@
+# Asset Brief
+
+- Project:
+- Asset name:
+- Purpose / gameplay role:
+- Asset type: character / prop / icon / tileset / VFX / UI
+- Visual references:
+- Style constraints:
+- Canvas dimensions:
+- Frame dimensions:
+- Palette constraints:
+- Facing directions:
+- Animation states:
+- FPS / per-frame timing:
+- Loop behavior:
+- Layers required:
+- Transparency:
+- Target engine:
+- Export formats:
+- Naming convention:
+- Destination:
+- Acceptance criteria:
+- Explicit exclusions:

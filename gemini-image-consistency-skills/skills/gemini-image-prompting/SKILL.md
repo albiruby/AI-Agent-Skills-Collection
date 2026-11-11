@@ -1,6 +1,6 @@
 ---
 name: gemini-image-prompting
-description: Core Gemini image skill - how to prompt and edit with Gemini image models (Nano Banana family, Nano Banana 2, Nano Banana Pro, Imagen) in the Gemini app, Google AI Studio, the Gemini API, Google Flow and Gemini CLI. Covers the reference-image formula, edit prompts, aspect and size settings, text rendering, backgrounds, model choice and where to put locks. Use for any Gemini image generation or editing request, "nano banana" prompts, or when moving a prompt pack into Gemini.
+description: Core Gemini image skill - how to prompt and edit with Gemini image models (Nano Banana family, Nano Banana 2, Nano Banana Pro, Imagen) in the Gemini app, Google AI Studio, the Gemini API, Google Flow and Gemini CLI. Covers the reference-image formula, edit prompts, aspect and size settings, text rendering, backgrounds, model choice and where to put locks. Use for any Gemini image generation or editing request, "nano banana" prompts, or when moving a prompt pack into Gemini. Use when a Gemini image prompt needs fixing: a keyword pile instead of sentences, an edit that changed everything, unclear reference-image roles, a wrong aspect ratio, or deciding which model and which surface the lock block belongs in.
 ---
 
 # Gemini Image Prompting
