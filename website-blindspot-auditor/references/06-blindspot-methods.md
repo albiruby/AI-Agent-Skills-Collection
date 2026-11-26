@@ -110,3 +110,65 @@ Look beyond defects:
 - Can observability make support and incident response easier?
 
 Label evidence-based opportunities separately from speculative product hypotheses.
+
+## 10. Promise-versus-implementation analysis
+
+Collect explicit promises: pricing, guarantees, limits, delivery times, privacy claims, security claims, support hours, cancellation terms, and onboarding copy. For each material promise, trace the implementation and find where the promise is enforced, computed, or merely displayed.
+
+Ask:
+
+- What must be true in code/data/operations for this promise to hold?
+- Which surface enforces it: UI, API, job, contract, or manual process?
+- What happens at the boundary (refund window, quota, trial end, guarantee expiry)?
+- Which promise is contradicted by another page, email, or policy?
+
+Report the contradiction only when the promise is explicit and the implementation evidence is sufficient.
+
+## 11. Invariant derivation
+
+Derive invariants from business meaning, not from current code:
+
+- Money: one charge per intended purchase; totals reconcile; refunds reverse revenue and access.
+- Access: a user sees only authorized objects/tenants; revocation propagates everywhere.
+- Inventory/capacity: confirmed commitments never exceed available units.
+- Publication: unpublished content is not publicly reachable, indexed, or cached.
+- Identity: account/email changes cannot be completed by the wrong party.
+- Lifecycle: deletion/export matches the stated policy across stores.
+
+Then ask which layer should enforce each invariant and whether any path bypasses it.
+
+## 12. Change and version-skew analysis
+
+Use recent changes, release notes, migrations, feature flags, and dependency upgrades as a map of likely blind spots:
+
+- What changed without corresponding tests or docs?
+- Which clients, workers, caches, or integrations still assume the old shape?
+- Can old and new versions coexist during deploy or rollback?
+- Did a configuration/default change alter behavior silently?
+- Is a feature flag partially rolled out, leaving inconsistent states?
+
+Do not blame a recent change without evidence; use it to prioritize hypotheses.
+
+## 13. Shadow-process and workaround analysis
+
+Look for the manual steps people invented to keep the system working:
+
+- Spreadsheet exports, copy/paste between tools, manual reconciliation.
+- Support scripts that repair data directly.
+- One person who "always fixes" a recurring issue.
+- Retry rituals or "do not click twice" instructions.
+- Off-system approvals, emails, or chat confirmations.
+
+A workaround is evidence that the formal workflow is incomplete, unreliable, or unclear. It may also create unlogged access or data copies. Treat it as a finding or coverage lead, not automatically a defect.
+
+## 14. Counterfactual reasoning
+
+For each important claim, ask what would have to be true for the opposite conclusion:
+
+- "This endpoint is protected" — what proves every path reaches the check?
+- "The cache is per-user" — what makes the key user-specific?
+- "The webhook is idempotent" — what prevents the second event from repeating the effect?
+- "Deleted data is gone" — which stores were checked?
+- "The report is accurate" — which event definition and reconciliation support it?
+
+Use the counterfactual to choose the next probe. If the answer is unknown, that is a coverage gap, not a finding.

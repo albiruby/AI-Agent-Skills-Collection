@@ -74,3 +74,37 @@ When the actual rule is unknown, report the ambiguity as a requirement gap rathe
 ## 6. Monorepos and multi-application projects
 
 Identify workspace boundaries and shared packages. Map each independently deployable app or service, then inspect shared authentication, UI, types, schemas, utilities, and configuration for systemic risk. Do not assume a repository equals one deployable website.
+
+## 7. Evidence inventory
+
+Before deep investigation, list what evidence is actually available and how current it is:
+
+- Source and configuration in the repository.
+- Runtime or preview environment and its version.
+- Test suite, fixtures, and test accounts.
+- Database/read-only query access.
+- Logs, metrics, traces, analytics, and error reports.
+- Deployment metadata, feature flags, and infrastructure configuration.
+- Product documentation, pricing, terms, support macros, and prior audits.
+
+Mark each source as current, stale, partial, or unavailable. A stale diagram can mislead more than no diagram. Prefer primary evidence (code, schema, runtime) over summaries.
+
+## 8. Capability probe
+
+Record which audit actions are actually possible:
+
+| Capability | Available? | Notes / limits |
+|---|---|---|
+| Read repository and configuration | | |
+| Run existing tests/lint/type-check | | |
+| Run a local build | | |
+| Browser automation | | |
+| Test accounts and synthetic data | | |
+| Read-only database access | | |
+| Logs/metrics/analytics | | |
+| Deployment metadata | | |
+| Network access to authorized targets | | |
+
+The capability probe sets the assurance ceiling. If browser or database access is missing, say which claims remain static or unverified. Do not compensate by overclaiming.
+
+Use `references/14-intake-and-scoping.md` to formalize authorization and `references/15-check-command-cookbook.md` for safe checks.

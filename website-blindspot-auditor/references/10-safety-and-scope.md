@@ -51,3 +51,38 @@ Identify potentially relevant obligations from project context, but do not give 
 ## 8. Stop conditions
 
 Stop an active test if it causes unexpected state change, impacts an unrelated user/system, exposes sensitive information, or exceeds the agreed scope. Report what happened without repeating sensitive details.
+
+## 9. Scope contract for high-risk audits
+
+For production-facing, multi-tenant, payment, health, or otherwise sensitive audits, record a scope contract before active testing:
+
+- Exact targets, environments, versions, and accounts.
+- Authorized action classes and prohibited actions.
+- Test-data rules and data-handling/retention.
+- Time box and checkpoints.
+- Stop conditions and escalation contact.
+- Deliverables and who receives them.
+
+Use `templates/intake-and-scope.md` and `references/14-intake-and-scoping.md`. When authorization is unclear, the contract is the default: read-only, non-destructive, no production mutation.
+
+## 10. Test data and evidence handling
+
+- Prefer synthetic accounts, orders, and documents.
+- If anonymized production data is authorized, define the anonymization and retention rules in advance.
+- Keep evidence in the agreed location; avoid copying sensitive payloads into chat or reports.
+- Redact identifiers that are not necessary to reproduce the issue.
+- Delete temporary evidence when the engagement ends, unless retention is required.
+- Do not upload customer data to external tools or model providers without authorization.
+- Preserve originals; work on copies for any authorized test that modifies files.
+
+## 11. Responsible disclosure
+
+If a critical vulnerability or active incident is discovered:
+
+- Stop intrusive testing.
+- Notify the authorized contact through the agreed channel.
+- Provide enough to reproduce safely, without exposing unrelated personal data.
+- Do not publish details, exploit steps, or affected user data publicly.
+- Record the timeline and what was observed.
+
+The audit report may need a restricted version for sensitive findings; keep the general coverage narrative separate.

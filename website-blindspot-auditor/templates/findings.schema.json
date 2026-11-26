@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/albiruby/AI-Agent-Skills-Collection/website-blindspot-auditor/templates/findings.schema.json",
+  "title": "Website Blind-Spot Audit Findings",
+  "description": "Exchange format for audit findings. The human-readable report remains the primary explanation.",
+  "type": "object",
+  "required": ["schema_version", "audit", "findings"],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "audit": {
+      "type": "object",
+      "required": ["target", "mode", "environment", "date"],
+      "properties": {
+        "target": { "type": "string", "minLength": 1 },
+        "mode": {
+          "enum": ["deep", "focused", "blind_spot_hunt", "re_audit"]
+        },
+        "environment": { "type": "string", "minLength": 1 },
+        "date": { "type": "string", "format": "date" },
+        "auditor": { "type": "string" },
+        "scope": { "type": "string" },
+        "authorization": { "type": "string" },
+        "limitations": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "score": { "type": "number", "minimum": 0, "maximum": 2 },
+        "dimensions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "score"],
+            "properties": {
+              "name": { "type": "string" },
+              "score": { "type": "number", "minimum": 0, "maximum": 2 },
+              "note": { "type": "string" }
+            }
+          }
+        },
+        "unknowns": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/finding" }
+    }
+  },
+  "$defs": {
+    "location": {
+      "type": "object",
+      "properties": {
+        "path": { "type": "string" },
+        "line": { "type": "integer", "minimum": 1 },
+        "url": { "type": "string" },
+        "route": { "type": "string" },
+        "component": { "type": "string" },
+        "environment": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["type", "description"],
+      "properties": {
+        "type": {
+          "enum": [
+            "observed",
+            "reproduced",
+            "static_source",
+            "runtime",
+            "log",
+            "document",
+            "inferred"
+          ]
+        },
+        "description": { "type": "string", "minLength": 1 },
+        "reference": { "type": "string" },
+        "environment": { "type": "string" },
+        "hash": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "finding": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "classification",
+        "domain",
+        "severity",
+        "confidence",
+        "status",
+        "locations",
+        "evidence",
+        "impact",
+        "recommendation"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{1,31}$"
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "classification": {
+          "enum": [
+            "verified_finding",
+            "potential_risk",
+            "coverage_gap",
+            "improvement_opportunity",
+            "not_applicable"
+          ]
+        },
+        "domain": { "type": "string", "minLength": 1 },
+        "severity": {
+          "enum": ["critical", "high", "medium", "low", "informational"]
+        },
+        "confidence": {
+          "enum": ["high", "medium", "low"]
+        },
+        "status": {
+          "enum": [
+            "open",
+            "in_progress",
+            "fixed",
+            "partially_fixed",
+            "regressed",
+            "unchanged",
+            "not_reproducible",
+            "unverifiable",
+            "accepted",
+            "deferred"
+          ]
+        },
+        "locations": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/location" }
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/evidence" }
+        },
+        "expected_behavior": { "type": "string" },
+        "observed_behavior": { "type": "string" },
+        "impact": { "type": "string", "minLength": 1 },
+        "scenario": { "type": "string" },
+        "verification_steps": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "recommendation": { "type": "string", "minLength": 1 },
+        "acceptance_criteria": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "dependencies": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "regression_risk": { "type": "string" },
+        "remaining_uncertainty": { "type": "string" },
+        "related_findings": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "first_seen": { "type": "string", "format": "date" },
+        "last_verified": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

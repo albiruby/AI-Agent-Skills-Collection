@@ -58,6 +58,17 @@ A trigger indicates relevance, not proof that a defect exists.
 
 Activate technology-specific guidance only when the technology is confirmed or strongly indicated. An adapter must sharpen the verification method, not replace the universal audit.
 
+Shipped adapters live in `adapters/` (index: `adapters/README.md`):
+
+- Next.js on Vercel: server/client boundaries, server actions, caching/ISR, preview protection.
+- WordPress/WooCommerce: capabilities vs nonces, REST/AJAX, uploads, personalized-content caching, wp-cron.
+- E-commerce and payments: price integrity, inventory races, webhook idempotency, refunds, entitlements.
+- Supabase/PostgreSQL: RLS, tenant isolation, storage/realtime policies, constraints, migrations.
+- Static/SPA: routing and indexability, bundle exposure, client-trusted APIs, service-worker cache.
+- AI-enabled products: prompt injection, tool authorization, output handling, RAG isolation, cost/latency, evals.
+
+Load only adapters supported by evidence and combine them when boundaries overlap.
+
 For example, if a project uses a relational database, inspect constraints, transactions, isolation, migrations, and query patterns. If it uses a document store, inspect document boundaries, access rules, indexing, consistency, and query constraints. Do not assume all databases behave alike.
 
 If a detected technology has no adapter:

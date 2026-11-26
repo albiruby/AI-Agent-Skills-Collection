@@ -64,3 +64,9 @@ Do not stop the audit. Use generic methods: identify the component role, inspect
 ## 6. Profile versus adapter
 
 A **profile** describes product/business workflows (for example, booking or SaaS). An **adapter** describes implementation-specific behavior (for example, a database, identity provider, CMS, or hosting platform). A single audit can load multiple profiles and adapters.
+
+## 7. Where adapters live
+
+Shipped adapters are in `adapters/`; start with `adapters/README.md` for detection signals and selection. When adding a new adapter, place it in that folder and update the index. Keep the structure in section 3 and link related domain briefs instead of duplicating them.
+
+Adapters must be evidence-oriented. A framework pattern is a lead; a finding requires reachability, impact, and sufficient evidence.

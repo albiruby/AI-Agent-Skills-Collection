@@ -93,3 +93,46 @@ Group repeated symptoms with the same root cause. Preserve separate findings whe
 - API returns 200 ≠ business operation complete.
 - Static code pattern ≠ measured performance regression.
 - Legal checklist completion ≠ legal compliance certification.
+
+## 10. Machine-readable export
+
+When findings must feed a tracker, dashboard, or remediation workflow, use `templates/findings.schema.json`. Keep the prose report as the primary explanation; the schema is an exchange format.
+
+Minimum fields per finding:
+
+- Stable ID (for example, `WBS-001`).
+- Title, class, domain, severity, confidence, status.
+- Affected locations/route/component.
+- Evidence references and environment.
+- Expected vs observed behavior.
+- Impact and realistic scenario.
+- Verification/reproduction steps.
+- Recommendation and acceptance criteria.
+- Remaining uncertainty and related findings.
+
+Do not put secrets or personal data in the schema. Use references/redacted descriptions instead.
+
+## 11. Remediation-ready findings
+
+A recommendation is stronger when the owner can verify completion:
+
+- State the desired behavior, not only the missing control.
+- Provide acceptance criteria that can be tested.
+- Identify dependencies and migration/rollout concerns.
+- Note regression risk and adjacent flows to re-check.
+- Separate the minimum fix from optional hardening.
+
+Use `templates/remediation-plan.md` when findings become work items.
+
+## 12. Re-audit status model
+
+For follow-up audits, use one status per prior finding:
+
+- **Fixed:** original failure mode no longer reproduces or the change conclusively removes it; verified in the relevant environment.
+- **Partially fixed:** some paths are closed, others remain or are unverified.
+- **Regressed:** previously fixed behavior is broken again.
+- **Unchanged:** same failure mode remains.
+- **Not reproducible:** cannot reproduce with available evidence; state conditions.
+- **Unverifiable:** access or environment prevents a conclusion.
+
+Never mark an item fixed because code changed or a ticket closed. Record evidence. Use `templates/re-audit.md`.
