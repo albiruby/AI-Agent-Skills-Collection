@@ -25,6 +25,18 @@ Document each source and transformation. Never embed secrets. Handle privacy/fir
 Provide queries/model, refresh instructions, a source-to-output map, and validation/reconciliation checks.
 
 
+## Output contract
+- A query pipeline, data model/relationships, refresh instructions, and validation notes.
+
+## Tooling notes
+- Use Power Query M, Data Model relationships, and DAX measures; document credentials/gateway dependencies.
+- Keep staging queries separate from presentation queries; handle schema changes explicitly.
+
+## Validation checklist
+- [ ] Refresh succeeds with representative data; row counts and keys reconcile.
+- [ ] Relationships and DAX measures are correct; no ambiguous joins.
+- [ ] Errors/queries with no data are visible; refresh ownership documented.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

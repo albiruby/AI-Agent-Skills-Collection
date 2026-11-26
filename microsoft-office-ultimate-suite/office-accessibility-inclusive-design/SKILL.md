@@ -31,6 +31,18 @@ Run native accessibility checkers when available, then manually inspect critical
 Provide remediated files and a prioritized report of fixed issues, residual risks, and checks not performed.
 
 
+## Output contract
+- An accessibility audit, remediation plan, evidence, and residual issues across apps.
+
+## Tooling notes
+- Use built-in accessibility checkers plus manual keyboard/screen-reader review; reference WCAG where applicable.
+- Fix structure first (styles, reading order, tables), then contrast/alt text/captions.
+
+## Validation checklist
+- [ ] Headings, reading order, alt text, contrast, and table headers are correct.
+- [ ] Keyboard/focus and captions/transcripts work where relevant.
+- [ ] PDF/export preserves accessibility; unverified items stated.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

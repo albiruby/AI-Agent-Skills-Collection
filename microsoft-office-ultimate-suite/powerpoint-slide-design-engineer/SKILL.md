@@ -25,6 +25,18 @@ Use a consistent aspect ratio unless requested otherwise; 16:9 is a practical de
 Return the editable PPTX and, when helpful, a PDF preview or design notes. Explain any elements that could not remain editable.
 
 
+## Output contract
+- An editable deck, layout system, design notes, and list of elements that could not remain editable.
+
+## Tooling notes
+- Use theme layouts, placeholders, grids, type scales, and native shapes/charts; use python-pptx for generation, native PowerPoint for fidelity.
+- Preserve editability; avoid flattening slides into images.
+
+## Validation checklist
+- [ ] No text overflow, clipping, or collisions at presentation size.
+- [ ] Alignment, spacing, typography, and contrast are consistent.
+- [ ] Fonts substitute safely; native objects remain editable; PDF reviewed.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

@@ -24,6 +24,18 @@ Do not invent availability. Never send invitations or cancel meetings unless req
 Provide a proposed schedule or carry out the explicitly requested calendar action with a concise confirmation of the resulting event.
 
 
+## Output contract
+- Proposed times or booked events, conflict/time-zone analysis, agenda, and attendee status.
+
+## Tooling notes
+- Use Outlook/Graph free/busy, recurrence, rooms/resources, and time-zone handling.
+- Propose rather than invite when attendees are external/senior unless authorized.
+
+## Validation checklist
+- [ ] Time zones/DST, date, duration, and recurrence are correct.
+- [ ] Conflicts and required/optional attendees are handled.
+- [ ] Invitations were confirmed by the tool; no invented availability.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

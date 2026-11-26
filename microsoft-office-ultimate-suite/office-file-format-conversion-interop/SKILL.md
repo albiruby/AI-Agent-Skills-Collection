@@ -24,6 +24,18 @@ Do not strip macros, metadata, comments, or tracked changes unless requested or 
 Provide converted file(s), a fidelity/compatibility report, and any manual review steps.
 
 
+## Output contract
+- Converted files, a fidelity report, compatibility notes, and rollback copies.
+
+## Tooling notes
+- Prefer native Office export/renderers for fidelity; use OOXML libraries only where their limits are acceptable.
+- Check fonts, embedded objects, formulas, links, macros, and PDF tagging.
+
+## Validation checklist
+- [ ] Content, layout, formulas, links, and metadata survive conversion.
+- [ ] PDF is selectable/tagged; accessibility preserved where required.
+- [ ] Round-trip or fallback tested; limitations stated.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

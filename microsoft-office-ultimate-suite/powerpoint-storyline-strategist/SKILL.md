@@ -25,6 +25,18 @@ For each slide provide: slide number, takeaway headline, purpose, key content/ev
 Provide the narrative outline or editable deck as requested. Keep the story aligned to the user's audience and time constraint.
 
 
+## Output contract
+- An audience map, core message, narrative arc, slide-by-slide outline, and speaker notes plan.
+
+## Tooling notes
+- Map evidence to each claim; defer visual design until the storyline is approved.
+- Include anticipated objections and appendix material.
+
+## Validation checklist
+- [ ] One clear message; each slide supports it.
+- [ ] Evidence is sufficient and sourced; no invented data.
+- [ ] Length fits the setting; decision/action is explicit.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

@@ -25,6 +25,18 @@ Do not invent targets or thresholds. Distinguish actual, forecast, target, and p
 Provide the workbook/dashboard, metric definitions, refresh instructions, and a note on any unsupported interactivity.
 
 
+## Output contract
+- A dashboard spec, PivotTables/charts, refresh instructions, and layout/validation notes.
+
+## Tooling notes
+- Use PivotTables/Data Model, slicers, timelines, and conditional formatting; use native Excel to create/maintain pivots.
+- Keep source ranges/tables stable and document refresh dependencies.
+
+## Validation checklist
+- [ ] Totals reconcile with source; filters/slicers behave correctly.
+- [ ] Refresh works; stale data is visible; no hidden/white-text data.
+- [ ] Dashboard is readable at intended size; print/PDF checked.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

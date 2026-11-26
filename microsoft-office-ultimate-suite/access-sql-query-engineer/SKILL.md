@@ -25,6 +25,18 @@ Be aware of reserved words, bracketed identifiers, date literal syntax, wildcard
 Provide SQL, parameter definitions, explanation of result grain, test queries, and any mutation/rollback precautions.
 
 
+## Output contract
+- Queries, parameters, optimization notes, and test cases.
+
+## Tooling notes
+- Use Access SQL/Query Design and DAO; parameterize inputs and avoid unsafe concatenation.
+- Test with nulls, duplicates, missing joins, and boundary values.
+
+## Validation checklist
+- [ ] Joins/filters/aggregates return correct results.
+- [ ] Action queries are safe, scoped, and backed up.
+- [ ] Performance acceptable at realistic volume; no accidental cartesian products.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

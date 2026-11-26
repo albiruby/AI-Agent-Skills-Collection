@@ -26,6 +26,18 @@ Do not fabricate promises, meeting availability, approvals, or facts. Mark missi
 Provide a ready-to-send draft or complete the explicitly authorized Outlook action, then report what was actually done.
 
 
+## Output contract
+- A ready-to-send draft or the explicitly authorized send action, plus recipient/attachment checks.
+
+## Tooling notes
+- Use Outlook/Graph; distinguish draft, send, reply, forward, and schedule.
+- Verify addresses, thread context, commitments, and attachments; never invent them.
+
+## Validation checklist
+- [ ] To/Cc/Bcc and Reply All intent are correct.
+- [ ] Subject, body, dates, attachments, and confidentiality are correct.
+- [ ] Sending was explicitly authorized and tool-confirmed; action status reported.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

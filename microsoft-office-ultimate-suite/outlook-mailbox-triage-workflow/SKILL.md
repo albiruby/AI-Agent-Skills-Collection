@@ -24,6 +24,18 @@ Do not mass-delete, permanently delete, bulk-unsubscribe, or create broad auto-f
 Provide a triage summary, proposed or applied categories/rules, exceptions, and a reversible cleanup plan.
 
 
+## Output contract
+- A triage taxonomy, rules/categories, cleanup plan, counts, and rollback notes.
+
+## Tooling notes
+- Use Outlook rules, categories, search folders, and views; use Graph for bulk/read-only analysis where authorized.
+- Prefer reversible moves over deletion; keep VIP/legal/HR mail out of automated rules.
+
+## Validation checklist
+- [ ] Rules do not hide/delete critical mail; patterns confirmed with the user.
+- [ ] Counts and categories are accurate; shared mailbox scope is explicit.
+- [ ] Changes are reversible; no unauthorized send/delete/forward.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

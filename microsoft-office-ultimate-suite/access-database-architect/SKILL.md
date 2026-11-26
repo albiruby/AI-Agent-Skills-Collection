@@ -25,6 +25,18 @@ Do not assume Access is a secure multi-user server database. Keep front-end form
 Provide ERD/schema description, table/field dictionary, relationship plan, indexes, and deployment recommendations.
 
 
+## Output contract
+- A schema, relationships, indexes, deployment recommendation, and migration triggers.
+
+## Tooling notes
+- Use Access/DAO, normalization, keys, and referential integrity; recommend SQL Server/Azure SQL when requirements exceed Access.
+- Separate front end/back end for multi-user use; keep a development copy.
+
+## Validation checklist
+- [ ] Tables normalized and keyed; relationships enforced.
+- [ ] Indexes fit query patterns; concurrency/growth assessed.
+- [ ] Backup/deployment model is realistic; limits stated.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

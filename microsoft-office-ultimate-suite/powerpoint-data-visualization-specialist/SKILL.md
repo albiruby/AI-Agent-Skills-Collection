@@ -24,6 +24,18 @@ Never invent data points, confidence intervals, targets, or forecasts. Do not ch
 Provide the editable chart/slide, source data or calculation notes, and a concise interpretation of what the visual shows.
 
 
+## Output contract
+- A chart plan, native charts/tables/diagrams, source notes, and interpretation guidance.
+
+## Tooling notes
+- Choose chart type by question; use native charts with explicit categories/series and labels.
+- Keep source data traceable; avoid 3D/decorative distortion.
+
+## Validation checklist
+- [ ] Chart data matches the source; axes, scales, and units are truthful.
+- [ ] Labels/legends are readable; color is accessible; no misleading truncation.
+- [ ] The visual supports the slide's takeaway without overclaiming.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

@@ -24,6 +24,18 @@ Verify intended recipients, link scope, access level, expiry, download permissio
 Provide a risk summary, recommended controls, and only the changes authorized by the user. Escalate policy conflicts rather than bypassing them.
 
 
+## Output contract
+- A data-flow/risk assessment, control recommendations, sharing/permission plan, and incident path.
+
+## Tooling notes
+- Use sensitivity labels, DLP, retention, least-privilege sharing, encryption, and macro policy.
+- Do not bypass MFA, macro protection, DLP, or admin controls.
+
+## Validation checklist
+- [ ] Least privilege and external-sharing rules are explicit.
+- [ ] Secrets/PII are minimized and not exposed in artifacts/logs.
+- [ ] Retention/audit/incident handling defined; legal review flagged where needed.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

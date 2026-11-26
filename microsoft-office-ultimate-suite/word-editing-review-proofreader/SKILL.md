@@ -27,6 +27,18 @@ Act as a senior editor and proofreader. Improve the writing without silently cha
 Provide the reviewed file in the requested mode (tracked, clean, or both), plus a compact summary of high-impact changes and unresolved questions.
 
 
+## Output contract
+- An edited DOCX (tracked changes or clean copy) plus a change log and unresolved questions.
+
+## Tooling notes
+- Use Word review/track changes and compare; preserve author voice and legal wording unless explicitly authorized.
+- Keep factual edits traceable; do not introduce new claims.
+
+## Validation checklist
+- [ ] Names, dates, figures, and commitments remain accurate or are flagged.
+- [ ] Legal/policy wording is preserved where required.
+- [ ] Comments resolved or intentionally retained; no silent rewrites.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

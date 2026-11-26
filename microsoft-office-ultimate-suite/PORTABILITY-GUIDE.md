@@ -9,7 +9,7 @@ name: example-skill
 description: "What it does and when to use it."
 ---
 
-# Instructions
+# Example Skill
 ...
 ```
 

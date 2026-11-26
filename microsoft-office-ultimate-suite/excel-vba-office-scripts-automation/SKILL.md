@@ -30,6 +30,18 @@ Never run untrusted macros. Do not disable security controls globally. Do not de
 Provide commented source code, deployment/run instructions, test cases, and a clear statement of the required host and permissions.
 
 
+## Output contract
+- An automation script/module, setup steps, test log, and rollback.
+
+## Tooling notes
+- Use VBA for desktop automation and Office Scripts for supported Excel/M365 automation; use Power Automate for orchestration.
+- Do not bypass macro security; document trusted locations, references, and platform limits.
+
+## Validation checklist
+- [ ] Code compiles/runs with representative data; errors are handled.
+- [ ] Idempotency and cleanup (events, calculation, alerts) verified.
+- [ ] Outputs validated; permissions/tenant limits stated.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

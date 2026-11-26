@@ -24,6 +24,18 @@ Treat recipient data as confidential. Do not expose bulk recipient lists in logs
 Provide the editable template, field schema/instructions, and generated sample or batch files as requested.
 
 
+## Output contract
+- A reusable template, data schema, merge instructions, sample output, and error-handling notes.
+
+## Tooling notes
+- Use content controls, fields, bookmarks, and Word Mail Merge; source data from a stable Excel/CSV/database schema.
+- Test with missing, duplicate, and malformed records; keep the template editable.
+
+## Validation checklist
+- [ ] Field mappings are correct and documented.
+- [ ] Missing/extra data is handled without corrupting output.
+- [ ] Conditional sections, labels, print layout, and PDF export verified.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

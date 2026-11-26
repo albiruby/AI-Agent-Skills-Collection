@@ -1,10 +1,10 @@
 # Skill Index
 
-**36 skills total: 1 master + 35 specialists.**
+**42 skills total: 1 master + 41 specialists.**
 
 ## Master Orchestrator
 
-- `microsoft-office-suite-director` — Master orchestrator for professional Microsoft Office work across Word, Excel, PowerPoint, Outlook, OneNote, and Access.
+- `microsoft-office-suite-director` — Master orchestrator for professional Microsoft Office and Microsoft 365 work across Word, Excel, PowerPoint, Outlook, OneNote, Access, Teams/SharePoint, and Copilot governance.
 
 ## Microsoft Word
 
@@ -13,6 +13,7 @@
 - `word-editing-review-proofreader` — Edits and reviews Word documents for clarity, grammar, tone, consistency, structure, factual traceability, and tracked-change workflows.
 - `word-templates-mail-merge-specialist` — Creates reusable Word templates, content controls, forms, labels, and mail-merge documents.
 - `word-accessibility-publishing-auditor` — Audits Word documents for accessibility, navigability, and publication readiness.
+- `word-vba-field-automation` — Automates Word document generation with VBA, fields, content controls, tables, and mail merge: templates, bulk documents, data-driven sections, and PDF export.
 
 ## Microsoft Excel
 
@@ -40,6 +41,7 @@
 - `outlook-mailbox-triage-workflow` — Organizes Outlook inboxes, prioritizes messages, builds rules/categories, and designs sustainable email workflows.
 - `outlook-calendar-meeting-coordinator` — Manages Outlook calendars, availability, meeting scheduling, time zones, recurring events, and invitations.
 - `outlook-contacts-follow-up-manager` — Maintains Outlook contacts, follow-up reminders, stakeholder notes, and lightweight relationship workflows.
+- `outlook-shared-mailbox-delegation` — Designs and troubleshoots Outlook shared mailboxes, delegates, send-as/on-behalf permissions, distribution groups, rules, retention, and access reviews.
 
 ## Microsoft OneNote
 
@@ -53,11 +55,15 @@
 - `access-forms-reports-builder` — Builds usable Microsoft Access forms, subforms, reports, navigation, validation, and print-ready outputs.
 - `access-vba-automation-engineer` — Automates Microsoft Access with VBA, DAO/ADO, form/report events, and database maintenance routines.
 - `access-data-integrity-migration` — Validates, imports, exports, cleans, migrates, and reconciles Access database data.
+- `access-security-deployment` — Secures and deploys multi-user Microsoft Access databases: split front end/back end, permissions, encryption, macro security, backups, performance, and migration triggers.
 
-## Cross-Application
+## Cross-Application and Microsoft 365
 
 - `office-microsoft-365-workflow-automation` — Designs cross-application Microsoft 365 workflows using Power Automate, Microsoft Graph, Office Scripts, connectors, and approved integrations.
 - `office-file-format-conversion-interop` — Converts, inspects, and repairs Office file formats while preserving content, structure, formulas, styles, and compatibility.
 - `office-accessibility-inclusive-design` — Applies inclusive design and accessibility practices across Word, Excel, PowerPoint, Outlook, and OneNote.
 - `office-security-privacy-governance` — Protects Office documents, workbooks, presentations, mailboxes, notebooks, and databases through privacy-aware handling, access controls, macro security, and safe sharing.
 - `office-quality-assurance-delivery` — Performs final QA, consistency checks, packaging, versioning, and delivery readiness across Office files and workflows.
+- `sharepoint-teams-document-collaboration` — Designs SharePoint document libraries and Microsoft Teams collaboration spaces with clear information architecture, permissions, metadata, versioning, sharing, and retention.
+- `teams-planner-forms-coordination` — Coordinates work across Microsoft Teams, Planner, Forms, Lists, and approvals: channel structure, tasks, intake forms, notifications, and reporting.
+- `microsoft-365-copilot-governance` — Assesses and improves Microsoft 365 Copilot readiness: oversharing, permissions, sensitivity labels, DLP, prompt/data boundaries, pilot design, adoption, and audit.

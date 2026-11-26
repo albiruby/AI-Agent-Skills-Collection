@@ -30,6 +30,18 @@ Separate passed checks, failed checks, warnings, and checks not possible in the 
 Provide final artifacts, a concise QA report, and handoff instructions.
 
 
+## Output contract
+- A QA report with pass/warn/fail, evidence, handoff package, and unverified items.
+
+## Tooling notes
+- Use the deliverable checklists and tool recipes; reopen, recalculate, render, and review.
+- Validate content, structure, data, visuals, accessibility, security, and compatibility.
+
+## Validation checklist
+- [ ] Critical checks have evidence, not just assertions.
+- [ ] Artifact opens/calculates/renders in the intended application.
+- [ ] Limitations, assumptions, and required next actions are clear.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

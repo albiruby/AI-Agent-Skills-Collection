@@ -25,6 +25,18 @@ Use descriptive tables, PivotTables, Analysis ToolPak or appropriate formulas wh
 Provide the analysis workbook, key findings, method notes, assumptions, and a clear explanation of what the data can and cannot support.
 
 
+## Output contract
+- An analysis plan, results, assumptions/limitations, and decision-oriented visuals.
+
+## Tooling notes
+- Use Excel formulas/PivotTables/Power Query; use Python/R only if available and authorized.
+- Keep raw data and calculations separate; document method and sample.
+
+## Validation checklist
+- [ ] Method fits the question and data; calculations independently checked.
+- [ ] Uncertainty, sample bias, and missing data are stated.
+- [ ] Interpretation does not overclaim causation or precision.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

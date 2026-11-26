@@ -25,6 +25,18 @@ Run PowerPoint's Accessibility Checker when available, inspect flagged issues ma
 Return the remediated deck and an issue report with severity, fix status, and limitations. Clearly state which checks were automated versus manually reviewed.
 
 
+## Output contract
+- An accessibility audit report, remediated deck, evidence, and residual issues.
+
+## Tooling notes
+- Use the accessibility checker, reading-order pane, alt text, captions, and contrast checks.
+- Combine automated checks with manual keyboard/screen-reader review.
+
+## Validation checklist
+- [ ] Reading order matches visual order; every slide has a meaningful title.
+- [ ] Images/charts have alt text; contrast is sufficient; color is not the only signal.
+- [ ] Captions/transcripts and reduced-motion alternatives exist where needed; PDF export checked.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

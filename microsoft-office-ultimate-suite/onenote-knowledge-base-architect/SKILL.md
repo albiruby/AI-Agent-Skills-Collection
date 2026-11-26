@@ -24,6 +24,18 @@ Convert raw notes into structured, searchable content without changing their mea
 Provide notebook/section/page architecture, templates, tags, and migration/maintenance guidance. If creating pages through an API, verify supported HTML/content behavior and permissions first.
 
 
+## Output contract
+- A notebook/section/page architecture, templates, navigation, governance, and archive plan.
+
+## Tooling notes
+- Use OneNote/Graph delegated access; section groups, tags, internal links, and search-friendly titles.
+- Avoid duplicating content across notebooks; define an owner and review cadence.
+
+## Validation checklist
+- [ ] Content is findable; navigation and links work.
+- [ ] Duplicates/orphans are controlled; permissions match sensitivity.
+- [ ] Sync conflicts checked; archive/retention defined.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

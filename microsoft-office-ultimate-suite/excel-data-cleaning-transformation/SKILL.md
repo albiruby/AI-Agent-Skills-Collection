@@ -25,6 +25,18 @@ Do not overwrite the source workbook or silently infer ambiguous identifiers. Tr
 Provide cleaned data, transformation steps, validation results, and a reproducible refresh method where possible.
 
 
+## Output contract
+- A cleaned dataset, transformation log, validation report, and rejected-record list.
+
+## Tooling notes
+- Use Power Query for repeatable pipelines; use openpyxl/pandas only when available and appropriate.
+- Preserve raw data in a separate sheet/file; never overwrite the only source.
+
+## Validation checklist
+- [ ] Row counts and key totals reconcile before/after.
+- [ ] Duplicates, types, dates, categories, and nulls are handled explicitly.
+- [ ] Rejected records are logged; transformations are reproducible.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

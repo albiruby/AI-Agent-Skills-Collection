@@ -31,6 +31,18 @@ Use stable Microsoft Graph `v1.0` endpoints for production when available; treat
 Provide architecture diagram/sequence, connector/API inventory, permissions matrix, workflow definition, failure handling, and deployment notes.
 
 
+## Output contract
+- An architecture/sequence, connector/API inventory, permission matrix, workflow definition, failure handling, and deployment notes.
+
+## Tooling notes
+- Use Power Automate, Graph, and Office Scripts with least privilege; handle throttling, pagination, and retries.
+- Prefer approved connectors; verify licensing/environment limits.
+
+## Validation checklist
+- [ ] Idempotency, duplicate detection, and retries verified.
+- [ ] Permissions, pagination, timeouts, and failure visibility are handled.
+- [ ] Rollback/disable path exists; audit logging excludes secrets/PII.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

@@ -27,6 +27,18 @@ Avoid unnecessary nested IF chains, repeated expensive calculations, volatile fu
 Return exact formulas, placement instructions, a plain-language explanation, compatibility notes, and test cases. When editing a workbook, preserve existing logic outside the requested scope.
 
 
+## Output contract
+- Exact formulas, placement, plain-language explanation, test cases, and compatibility notes.
+
+## Tooling notes
+- Prefer LET, LAMBDA, XLOOKUP/XMATCH, FILTER/SORT/UNIQUE, and structured references when supported.
+- Check Excel version, locale separators, and function availability; provide backward-compatible alternatives.
+
+## Validation checklist
+- [ ] Boundary cases (blank, zero, negative, duplicate, missing match) are tested.
+- [ ] No unintended spill, implicit intersection, or error masking.
+- [ ] Results independently checked; compatibility assumptions stated.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

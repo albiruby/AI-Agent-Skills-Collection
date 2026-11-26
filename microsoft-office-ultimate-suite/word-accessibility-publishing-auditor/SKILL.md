@@ -30,6 +30,18 @@ Act as a Word accessibility and publishing specialist. Improve accessibility at 
 Return the corrected file and an accessibility report separating fixed issues, remaining limitations, and checks that could not be performed.
 
 
+## Output contract
+- An accessibility audit report, remediated DOCX/PDF, evidence, and residual issues.
+
+## Tooling notes
+- Use the Office accessibility checker, semantic styles, alt text, table headers, document language, and tagged PDF export.
+- Combine automated checks with manual keyboard/screen-reader and reading-order review.
+
+## Validation checklist
+- [ ] Headings, reading order, alt text, contrast, and table headers are correct.
+- [ ] Links are descriptive; language is set; captions/transcripts exist where needed.
+- [ ] PDF preserves tags, links, and reading order; unverified items stated.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

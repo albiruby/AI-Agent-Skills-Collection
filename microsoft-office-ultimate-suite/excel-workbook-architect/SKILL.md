@@ -25,6 +25,18 @@ Avoid volatile functions unless necessary; minimize whole-column array calculati
 Provide the editable workbook, sheet map, assumptions, and a short explanation of how to use and refresh it.
 
 
+## Output contract
+- A sheet map, workbook/template, README/assumptions, and validation notes.
+
+## Tooling notes
+- Use tables, named ranges, data validation, protection, and clear sheet roles; use openpyxl/templates for generation.
+- Use native Excel for pivots, recalculation, and features the library cannot preserve.
+
+## Validation checklist
+- [ ] Raw data, inputs, calculations, and outputs are separated.
+- [ ] Formulas are consistent and documented; no hard-coded values in calculation sheets.
+- [ ] Workbook recalculated and key totals reconciled; print/export layout checked.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

@@ -28,6 +28,18 @@ Act as a senior document architect and technical writer. Turn the user's objecti
 Provide the requested editable file when file creation is available, plus a concise note describing its structure and any assumptions. If direct file creation is unavailable, provide complete, clearly structured content ready to paste into Word.
 
 
+## Output contract
+- A document outline, complete DOCX/PDF, source map, and list of assumptions/placeholders.
+
+## Tooling notes
+- Use semantic Word styles, native tables, fields, captions, and TOC; use python-docx only for structural generation, then reopen in Word for layout/TOC updates.
+- Preserve supplied legal/factual wording; flag conflicts instead of silently rewriting.
+
+## Validation checklist
+- [ ] Structure and content match the audience and decision.
+- [ ] Styles, headings, TOC, page numbers, tables, and captions are correct.
+- [ ] DOCX and PDF open and render correctly; facts traceable to sources.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

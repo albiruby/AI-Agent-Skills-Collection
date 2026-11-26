@@ -25,6 +25,18 @@ Back up the database before structural or bulk data changes. Do not store creden
 Provide commented VBA, required references, placement instructions (standard module/form/report), test steps, and rollback guidance.
 
 
+## Output contract
+- VBA modules, automation workflow, error handling, test log, and rollback.
+
+## Tooling notes
+- Use VBA with DAO/ADO, transactions where appropriate, and late binding for compatibility.
+- Avoid `.Select`, use `LongPtr` on 64-bit, and restore application state in cleanup.
+
+## Validation checklist
+- [ ] Code compiles; errors handled and logged.
+- [ ] Transactions/rollbacks behave; no partial writes.
+- [ ] Tested on copies with representative data; security policy respected.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

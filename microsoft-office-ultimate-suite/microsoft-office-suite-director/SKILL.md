@@ -1,6 +1,6 @@
 ---
 name: microsoft-office-suite-director
-description: "Master orchestrator for professional Microsoft Office work across Word, Excel, PowerPoint, Outlook, OneNote, and Access. Routes tasks to specialist skills, coordinates cross-app workflows, and enforces quality, security, accessibility, and delivery standards. Use when a task spans multiple Office apps or it is unclear which specialist workflow fits."
+description: "Master orchestrator for professional Microsoft Office and Microsoft 365 work across Word, Excel, PowerPoint, Outlook, OneNote, Access, Teams/SharePoint, and Copilot governance. Routes tasks to specialist skills, coordinates cross-app workflows, and enforces quality, security, accessibility, and delivery standards. Use when a task spans multiple Office apps or it is unclear which specialist workflow fits."
 ---
 
 # Microsoft Office Suite Director
@@ -24,6 +24,7 @@ Use the narrowest specialist that fully covers the task. Combine specialists for
 - `word-editing-review-proofreader`: editorial review, rewriting, grammar, tracked changes, consistency.
 - `word-templates-mail-merge-specialist`: reusable templates, content controls, forms, labels, bulk personalized documents.
 - `word-accessibility-publishing-auditor`: accessibility remediation and DOCX/PDF publishing QA.
+- `word-vba-field-automation`: VBA-driven document assembly, content controls, fields, mail merge at scale, and PDF export.
 
 ### Excel
 - `excel-workbook-architect`: workbook architecture, input/output design, tables, named ranges, maintainability.
@@ -48,6 +49,7 @@ Use the narrowest specialist that fully covers the task. Combine specialists for
 - `outlook-mailbox-triage-workflow`: inbox classification, folders, categories, rules, cleanup plans.
 - `outlook-calendar-meeting-coordinator`: availability checks, invitations, events, recurrence, time zones.
 - `outlook-contacts-follow-up-manager`: contact hygiene, duplicates, reminders, stakeholder follow-up.
+- `outlook-shared-mailbox-delegation`: shared mailboxes, delegates, send-as/on-behalf, rules, retention, access reviews.
 
 ### OneNote
 - `onenote-knowledge-base-architect`: notebook, section, page, tag, navigation, and archive architecture.
@@ -59,6 +61,7 @@ Use the narrowest specialist that fully covers the task. Combine specialists for
 - `access-forms-reports-builder`: forms, subforms, controls, validation, reports, navigation.
 - `access-vba-automation-engineer`: VBA, DAO/ADO, events, transactions, imports/exports.
 - `access-data-integrity-migration`: profiling, migration, reconciliation, backup, acceptance.
+- `access-security-deployment`: split database, permissions, encryption, backup/restore, multi-user rollout, migration triggers.
 
 ### Cross-application
 - `office-microsoft-365-workflow-automation`: Power Automate, Graph, Office Scripts and connector workflows.
@@ -66,6 +69,9 @@ Use the narrowest specialist that fully covers the task. Combine specialists for
 - `office-accessibility-inclusive-design`: cross-app inclusive design and accessibility.
 - `office-security-privacy-governance`: confidentiality, permissions, macro safety, sharing controls.
 - `office-quality-assurance-delivery`: final QA, artifact validation, packaging, handoff.
+- `sharepoint-teams-document-collaboration`: SharePoint libraries, Teams channels, metadata, permissions, versioning, retention.
+- `teams-planner-forms-coordination`: Teams/Planner/Forms/List workflows, ownership, notifications, reporting.
+- `microsoft-365-copilot-governance`: Copilot readiness, oversharing, labels/DLP, pilot design, adoption, audit.
 
 ## Orchestration procedure
 
@@ -124,6 +130,19 @@ Use deliberate notebook architecture and searchable page titles. Preserve source
 
 ### Access
 Model relationships and constraints explicitly. Validate action queries before execution. Back up before schema/data migration. Evaluate whether Access is suitable for concurrency, scale, security, and availability.
+
+## Output contract
+- A routing decision naming the specialist skills, order of work, dependencies, and final deliverable.
+- An integrated delivery plan plus final QA/handoff summary covering every app touched.
+
+## Tooling notes
+- Route by available capability and task, not by assumption; use references/tool-recipes.md and references/deliverable-checklists.md when available in the pack.
+- Keep one system of record per data element and reconcile cross-app numbers before delivery.
+
+## Validation checklist
+- [ ] Every subtask has an owner/skill and a verified output.
+- [ ] Cross-app figures, dates, names, and formats reconcile.
+- [ ] Final artifact opened/validated and limitations stated.
 
 ## Cross-harness execution contract
 - Inspect available tools/integrations first. Use only the current harness's actual capabilities and permissions.

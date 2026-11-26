@@ -24,6 +24,18 @@ Keep brand source files and fonts subject to licensing. Do not embed unlicensed 
 Return the PPTX template, theme/layout inventory, usage guidance, and known compatibility constraints.
 
 
+## Output contract
+- A theme, slide masters/layouts, component library, usage guide, and licensing notes.
+
+## Tooling notes
+- Use Slide Master, theme colors/fonts, layouts, and accessible placeholders.
+- Keep masters editable; avoid hard-coded content that users cannot change.
+
+## Validation checklist
+- [ ] Brand consistency across layouts; contrast/accessibility checked.
+- [ ] Placeholders are meaningful; no leftover template text.
+- [ ] Template works across required PowerPoint versions; fonts available.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

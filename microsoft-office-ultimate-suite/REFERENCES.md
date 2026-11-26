@@ -21,5 +21,22 @@ These links are starting points for verifying current application/API capabiliti
 ## VBA and Office automation
 - Office VBA reference: https://learn.microsoft.com/en-us/office/vba/
 
+## SharePoint, Teams, and Planner
+- SharePoint Graph API overview: https://learn.microsoft.com/en-us/graph/api/resources/sharepoint
+- Teams API overview: https://learn.microsoft.com/en-us/graph/api/resources/teams-api-overview
+- Planner API overview: https://learn.microsoft.com/en-us/graph/api/resources/planner-overview
+- SharePoint sharing and permissions: https://learn.microsoft.com/en-us/sharepoint/sharing-and-permissions
+
+## Copilot and governance
+- Microsoft 365 Copilot overview: https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-overview
+- Microsoft Purview: https://learn.microsoft.com/en-us/purview/purview
+- SharePoint Advanced Management: https://learn.microsoft.com/en-us/sharepoint/advanced-management
+- Copilot readiness and adoption: https://learn.microsoft.com/en-us/copilot/microsoft-365/
+
+## Word, PowerPoint, and Outlook automation
+- Word VBA reference: https://learn.microsoft.com/en-us/office/vba/api/overview/word
+- PowerPoint VBA reference: https://learn.microsoft.com/en-us/office/vba/api/overview/powerpoint
+- Outlook VBA reference: https://learn.microsoft.com/en-us/office/vba/api/overview/outlook
+
 ## Design principle
 Prefer stable, documented production interfaces. Microsoft Graph `beta` endpoints can change and should not be assumed production-stable. For OneNote Graph integration, use delegated authentication; app-only authentication is not supported.

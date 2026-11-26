@@ -28,6 +28,18 @@ Test the form lifecycle: new, edit, save, cancel, validation failure, record nav
 Provide form/report inventory, control/query design, event logic as needed, and a tested Access file or build instructions.
 
 
+## Output contract
+- Forms/subforms/reports, validation rules, navigation, and print-ready outputs.
+
+## Tooling notes
+- Use Access form/report designer, controls, events, and VBA only where needed.
+- Design for keyboard use, clear errors, and stable tab order.
+
+## Validation checklist
+- [ ] Input validation and error messages are clear.
+- [ ] Navigation/tab order works; controls are labeled.
+- [ ] Reports fit the page, repeat headers, and export cleanly.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

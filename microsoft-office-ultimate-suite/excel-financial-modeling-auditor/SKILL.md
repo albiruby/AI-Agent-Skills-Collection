@@ -29,6 +29,18 @@ Label actual versus forecast, nominal versus real, pre-tax versus post-tax, and 
 Return the editable model, assumption register, model map, audit checks, and concise explanation of material sensitivities and limitations.
 
 
+## Output contract
+- A model review memo, issue list, corrected copy, and reconciliation/check results.
+
+## Tooling notes
+- Trace formulas to inputs, audit hard-codes, test scenarios/sensitivity, and reconcile to source statements.
+- Use independent checks; do not trust a green "checks" cell without testing its logic.
+
+## Validation checklist
+- [ ] Hard-codes, formula inconsistencies, and broken links are identified.
+- [ ] Units, currency, rounding, and forecast assumptions are consistent and sourced.
+- [ ] Totals reconcile; scenarios behave; limitations and unresolved inputs stated.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

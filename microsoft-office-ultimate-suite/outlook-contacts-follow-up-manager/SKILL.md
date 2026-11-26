@@ -24,6 +24,18 @@ Treat contact data as personal information. Do not export or share lists externa
 Provide a cleaned contact plan/list, duplicate review, and follow-up queue or reminders as requested.
 
 
+## Output contract
+- A contact hygiene plan, duplicate/segment report, follow-up list, and privacy notes.
+
+## Tooling notes
+- Use Outlook contacts/categories/search; import/export only with consent and a clean mapping.
+- Keep relationship notes factual; do not infer sensitive attributes.
+
+## Validation checklist
+- [ ] Duplicates and stale contacts handled; ownership clear.
+- [ ] Consent/privacy rules respected; no mass email without approval.
+- [ ] Follow-ups have owner/date/context; sources traceable.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

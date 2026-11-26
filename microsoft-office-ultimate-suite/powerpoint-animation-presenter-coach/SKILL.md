@@ -26,6 +26,18 @@ Provide a non-motion path to the same information. Avoid flashing effects and do
 Return the editable deck, motion plan, presenter notes, and export caveats.
 
 
+## Output contract
+- An animation/transition plan, timings, speaker notes, and delivery guidance.
+
+## Tooling notes
+- Use purposeful Motion/animation and rehearsal tools; provide a reduced-motion or static fallback.
+- Avoid animation that blocks reading or depends on a specific machine.
+
+## Validation checklist
+- [ ] Every animation supports comprehension.
+- [ ] Timing works in presentation mode; no hidden content.
+- [ ] Speaker notes cover key transitions; PDF/static fallback exists.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

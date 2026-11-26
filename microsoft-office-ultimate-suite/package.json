@@ -1,10 +1,10 @@
 {
   "name": "microsoft-office-ultimate-suite",
-  "version": "1.0.0",
-  "description": "Universal Agent Skills for Word, Excel, PowerPoint, Outlook, OneNote, Access and cross-application Microsoft 365 workflows.",
-  "skills": 36,
+  "version": "2.0.0",
+  "description": "Universal Agent Skills for Word, Excel, PowerPoint, Outlook, OneNote, Access, Teams/SharePoint, and Microsoft 365 Copilot governance.",
+  "skills": 42,
   "master": "microsoft-office-suite-director",
-  "specialists": 35,
+  "specialists": 41,
   "format": "Agent Skills SKILL.md (name, description, instructions)",
   "vendorNeutral": true
 }

@@ -24,6 +24,18 @@ Prefer editing DOCX styles and OOXML structures through a reliable document libr
 Return the formatted editable document and a short change summary. Keep content changes separate from visual-only changes so the user can review them.
 
 
+## Output contract
+- A style/template map, corrected DOCX, before/after notes, and remaining layout risks.
+
+## Tooling notes
+- Use styles, section breaks, fields, table styles, and headers/footers; avoid manual spacing/blank-line layout.
+- Use native Word for advanced layout, TOC, and field behavior when available.
+
+## Validation checklist
+- [ ] Heading hierarchy and navigation are intact.
+- [ ] TOC/page fields update; pages, sections, and headers/footers are correct.
+- [ ] No table overflow, orphan headings, or broken cross-references; PDF reviewed.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

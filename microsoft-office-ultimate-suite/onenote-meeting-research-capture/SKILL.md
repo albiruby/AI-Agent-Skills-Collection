@@ -30,6 +30,18 @@ Act as a knowledge capture and synthesis specialist for OneNote. Convert fragmen
 Provide a ready-to-save OneNote page or create it using authorized OneNote tools. Include traceable sources and an action summary.
 
 
+## Output contract
+- A structured page with context, decisions, action items, sources, and follow-ups.
+
+## Tooling notes
+- Use OneNote/Graph delegated access; page HTML, tags, links, and a consistent template.
+- Separate source facts from interpretation; keep citations traceable.
+
+## Validation checklist
+- [ ] Decisions/actions have owner/date/status.
+- [ ] Sources support claims; no invented notes or attendees.
+- [ ] Sensitive content is in the right notebook; sync/duplicates checked.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.

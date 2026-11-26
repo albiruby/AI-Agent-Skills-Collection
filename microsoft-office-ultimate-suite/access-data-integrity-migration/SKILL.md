@@ -25,6 +25,18 @@ Never truncate or overwrite a production table as a casual import step. Avoid si
 Provide mapping specification, migration steps/scripts, reconciliation results, rejected-row report, and rollback/acceptance checklist.
 
 
+## Output contract
+- A profiling report, migration plan, reconciliation results, acceptance criteria, and rollback.
+
+## Tooling notes
+- Stage data, preserve source, map types/keys, and reconcile row counts/checksums.
+- Use Access/Excel/SQL tooling appropriate to the source and target.
+
+## Validation checklist
+- [ ] Source and target counts/totals reconcile.
+- [ ] Duplicates, nulls, and transformations are documented.
+- [ ] Rollback and backup tested; rejected records visible.
+
 ## Cross-harness execution contract
 - First inspect which tools, integrations, runtimes, files, and Office application access are actually available in the current agent harness. Use only those capabilities. A skill is workflow guidance, not a grant of access or permissions.
 - Prefer the most direct supported path: native Word/Excel/PowerPoint/Outlook/OneNote/Access UI or connector for live account actions; Office Open XML-aware libraries for supported offline file edits; VBA/Office Scripts/Power Automate/Graph only when the host and permissions support them.
