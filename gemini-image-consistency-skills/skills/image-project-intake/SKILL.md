@@ -31,7 +31,7 @@ First step of any consistency project, or when the goal is unclear.
 ## Process
 1. Read everything the user already provided (messages, files, screenshots). Extract answers first.
 2. Ask only for what is still missing, in one batch.
-3. Fill `templates/PROJECT_BRIEF.md`.
+3. Fill `../../templates/PROJECT_BRIEF.md`.
 4. List assumptions at the top and ask for a quick yes/no.
 5. Hand off to `visual-style-lock`.
 

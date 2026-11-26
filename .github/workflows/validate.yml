@@ -15,3 +15,7 @@ jobs:
       - name: Validate SKILL.md frontmatter
         shell: pwsh
         run: ./.github/scripts/validate-frontmatter.ps1
+
+      - name: Validate repository conventions
+        shell: pwsh
+        run: ./.github/scripts/validate-repo.ps1

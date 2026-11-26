@@ -10,7 +10,7 @@ Image models treat every generation as independent. Consistency only appears whe
 
 ## Core principles
 1. **Lock before you generate.** No asset prompts until the style, theme and palette are written down.
-2. **One source of truth.** Everything lives in a single STYLE BIBLE (`templates/STYLE_BIBLE.md`). Prompts are assembled from it, never improvised.
+2. **One source of truth.** Everything lives in a single STYLE BIBLE (`../../templates/STYLE_BIBLE.md`). Prompts are assembled from it, never improvised.
 3. **Verbatim reuse.** Lock blocks are copied word for word. Paraphrasing a lock is the main cause of drift.
 4. **Anchor images beat words.** Approve one canonical image per character, style and environment and reuse it as a reference.
 5. **Hierarchy of locks.** Global rules > asset-type canon > asset-specific prompt. A lower level never overrides a higher one.

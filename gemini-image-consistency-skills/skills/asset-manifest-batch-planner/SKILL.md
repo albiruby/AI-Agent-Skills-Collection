@@ -36,7 +36,7 @@ Rows = characters, columns = animations (idle, walk, run, attack, hurt, death), 
 
 ## Process
 1. Read brief and bible; list deliverables by category.
-2. Build the manifest (`templates/ASSET_MANIFEST.md`), assign IDs and priorities.
+2. Build the manifest (`../../templates/ASSET_MANIFEST.md`), assign IDs and priorities.
 3. Mark dependencies and the generation order.
 4. For each row call `master-prompt-builder` and store the result in the Prompt Pack.
 5. After each batch of 5-10 assets, run `consistency-qa-reviewer` on a contact sheet before continuing.

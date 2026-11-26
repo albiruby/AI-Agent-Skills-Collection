@@ -37,7 +37,7 @@ Example:
 6. For a cast, ensure each member differs in at least two of: silhouette, dominant color, size, headwear.
 
 ## Output
-- `CHARACTER_CARD` per character (use `templates/CHARACTER_CARD.md`)
+- `CHARACTER_CARD` per character (use `../../templates/CHARACTER_CARD.md`)
 - Design Lock sentence
 - Turnaround prompt and anchor file note
 

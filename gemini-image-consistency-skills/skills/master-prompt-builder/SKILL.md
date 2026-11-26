@@ -34,7 +34,7 @@ ASSET GENERATION PROMPT:
 3. Keep the whole prompt under about 350 words; if longer, move stable rules into the global instruction (`instruction-slot-packager`) and keep the repeated lock short.
 4. Run `negative-constraints-guardrails` to append standard exclusions.
 5. Number prompts with asset IDs from the manifest.
-6. Output a Prompt Pack (`templates/PROMPT_PACK.md`) with one fenced block per prompt so each can be copied alone.
+6. Output a Prompt Pack (`../../templates/PROMPT_PACK.md`) with one fenced block per prompt so each can be copied alone.
 
 ## Writing rules
 - Use plain, concrete nouns and measurable attributes ("1 px outline", "26 px tall").

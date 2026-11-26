@@ -37,7 +37,7 @@ Put outputs next to the relevant anchor (a contact sheet works best). Judge each
 1. Gather outputs and anchors; note asset IDs.
 2. Score each criterion; write one short evidence note per score below 2.
 3. Give the verdict and the **smallest change** that would fix it (edit, prompt tweak, new reference, reset).
-4. Log in `templates/QA_SCORECARD.md`; list recurring defects and send them to `negative-constraints-guardrails` and `drift-correction-iteration`.
+4. Log in `../../templates/QA_SCORECARD.md`; list recurring defects and send them to `negative-constraints-guardrails` and `drift-correction-iteration`.
 5. At batch level: after every 5-10 assets, review a contact sheet for series-wide drift.
 
 ## Report format
