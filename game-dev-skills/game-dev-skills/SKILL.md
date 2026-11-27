@@ -1,9 +1,9 @@
 ---
-name: game-dev-orchestrator
+name: game-dev-skills
 description: Entry point for the Game Dev Skills pack. Use first for ANY game development request (idea, prototype, full game, port, fix, launch). Routes to the right specialist skills, defines the pipeline, and enforces the intake checklist. Use when classifying an incoming game-dev request, running the intake checklist, and routing it to the right specialist skill in the pack.
 ---
 
-# Game Dev Orchestrator
+# Game Dev Skills
 
 ## Purpose
 Single entry point. Classify the request, run the intake, pick skills, and keep outputs consistent across the whole pack.

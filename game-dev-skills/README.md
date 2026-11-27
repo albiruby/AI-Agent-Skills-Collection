@@ -3,14 +3,14 @@
 A complete, engine-agnostic set of **SKILL.md** files for AI agents (Claude, GPT, Gemini, local LLMs, coding agents) covering the full game development lifecycle: concept -> engine & tech stack -> design -> art/audio/UI -> systems -> platforms -> QA -> monetization -> launch.
 
 ## How to use
-1. Start with `game-dev-orchestrator` (it routes to everything else).
+1. Start with `game-dev-skills` (it routes to everything else).
 2. Load only the skills relevant to the current phase to save context.
 3. Outputs chain: PROJECT_BRIEF -> GDD -> engine/stack -> task plan -> implementation.
 
 ## Skills
 | # | Skill | Covers |
 |---|---|---|
-| 00 | game-dev-orchestrator | intake, routing, pipeline |
+| 00 | game-dev-skills | intake, routing, pipeline |
 | 01 | game-concept-gdd | pitch, pillars, loop, GDD |
 | 02 | game-engine-selector | Unity, Unreal, Godot, GameMaker, web & code-first frameworks |
 | 03 | game-tech-stack-architect | architecture, data, save, backend, CI |
