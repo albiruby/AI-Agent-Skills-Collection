@@ -12,7 +12,7 @@
       "id": "complete-pixel-art-game",
       "name": "Complete Pixel Art Game Mode",
       "skills": [
-        "pixel-art-studio-director",
+        "pixel-master",
         "pixel-art-art-director",
         "pixel-art-fundamentals-specialist",
         "pixel-art-palette-color-specialist",
@@ -37,7 +37,7 @@
       "id": "character-studio",
       "name": "Character Studio Mode",
       "skills": [
-        "pixel-art-studio-director",
+        "pixel-master",
         "pixel-art-art-director",
         "pixel-art-fundamentals-specialist",
         "pixel-art-palette-color-specialist",
@@ -52,7 +52,7 @@
       "id": "environment-studio",
       "name": "Environment Studio Mode",
       "skills": [
-        "pixel-art-studio-director",
+        "pixel-master",
         "pixel-art-art-director",
         "pixel-art-palette-color-specialist",
         "pixel-art-environment-artist",
@@ -67,7 +67,7 @@
       "id": "pixel-ui-studio",
       "name": "Pixel UI Studio Mode",
       "skills": [
-        "pixel-art-studio-director",
+        "pixel-master",
         "pixel-art-art-director",
         "pixel-art-palette-color-specialist",
         "pixel-art-ui-icon-designer",
@@ -80,7 +80,7 @@
       "id": "3d-to-pixel-studio",
       "name": "3D-to-Pixel Studio Mode",
       "skills": [
-        "pixel-art-studio-director",
+        "pixel-master",
         "pixel-art-art-director",
         "pixel-style-conversion-specialist",
         "pixel-art-palette-color-specialist",
@@ -95,9 +95,9 @@
   "skills": [
     {
       "number": "00",
-      "id": "pixel-art-studio-director",
+      "id": "pixel-master",
       "group": "Master Orchestrator",
-      "path": "skills/pixel-art-studio-director/SKILL.md"
+      "path": "skills/pixel-master/SKILL.md"
     },
     {
       "number": "01",

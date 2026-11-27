@@ -20,7 +20,7 @@ On Windows use `python`; `python3` may be a Store alias. On macOS/Linux use `pyt
 Copy the **whole pack** so shared references/templates remain available:
 
 ```text
-~/.config/opencode/skills/pixel-art-master-studio/
+~/.config/opencode/skills/pixel-master/
 ```
 
 OpenCode discovers each `skills/<skill>/SKILL.md` below that folder.
@@ -28,19 +28,19 @@ OpenCode discovers each `skills/<skill>/SKILL.md` below that folder.
 Project-level:
 
 ```text
-<project>/.opencode/skills/pixel-art-master-studio/
+<project>/.opencode/skills/pixel-master/
 ```
 
 ### Claude Code
 
 ```text
-~/.claude/skills/pixel-art-master-studio/
+~/.claude/skills/pixel-master/
 ```
 
 ### Codex / universal Agent Skills
 
 ```text
-~/.agents/skills/pixel-art-master-studio/
+~/.agents/skills/pixel-master/
 ```
 
 ### Gemini CLI / Cursor / Windsurf / other harnesses
@@ -71,7 +71,7 @@ python scripts/palette_ramp.py "#3a6ea5" --steps 5
 
 Ask the agent:
 
-> Use `pixel-art-studio-director` to inspect this project and propose a pixel-art production plan.
+> Use `pixel-master` to inspect this project and propose a pixel-art production plan.
 
 ## 5. Update / remove
 

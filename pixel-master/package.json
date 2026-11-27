@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Production-grade pixel-art studio for AI agents: 1 master + 25 specialists for authentic pixel art, pixel style, animation, UI, tilesets, 3D-to-pixel, engine integration, QA, and delivery.",
   "skills": 26,
-  "master": "pixel-art-studio-director",
+  "master": "pixel-master",
   "specialists": 25,
   "format": "Agent Skills SKILL.md",
   "requirements": {

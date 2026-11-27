@@ -4,7 +4,7 @@
 
 ## Master Orchestrator
 
-- `pixel-art-studio-director` - Master orchestrator for end-to-end pixel-art production: art direction, characters, creatures, props, environments, tilesets, UI, typography, animation, VFX, atlases, automation, 3D-to-pixel, shaders, engine integration, QA, and delivery.
+- `pixel-master` - Master orchestrator for end-to-end pixel-art production: art direction, characters, creatures, props, environments, tilesets, UI, typography, animation, VFX, atlases, automation, 3D-to-pixel, shaders, engine integration, QA, and delivery.
 
 ## A. Pixel Art Fundamentals & Art Direction
 

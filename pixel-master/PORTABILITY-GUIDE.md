@@ -26,7 +26,7 @@ bash ./install.sh <destination>
 .\install.ps1 -Destination "<destination>"
 ```
 
-The installers copy the 26 skill folders. For the complete pack with shared references/templates, copy the whole `pixel-art-master-studio/` folder into a skill source that scans nested `SKILL.md` files (OpenCode supports this).
+The installers copy the 26 skill folders. For the complete pack with shared references/templates, copy the whole `pixel-master/` folder into a skill source that scans nested `SKILL.md` files (OpenCode supports this).
 
 ## Shared resources
 

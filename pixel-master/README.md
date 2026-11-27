@@ -17,7 +17,7 @@ The pack covers authentic hand-authored pixel art and pixel-style pipelines (ras
 ## Architecture
 
 ```text
-pixel-art-master-studio/
+pixel-master/
   README.md
   INSTALL.md
   CHANGELOG.md
@@ -32,7 +32,7 @@ pixel-art-master-studio/
   shared/
     PIXEL_ART_STANDARDS.md
   skills/
-    pixel-art-studio-director/        # master
+    pixel-master/        # master
     pixel-art-art-director/           # 01
     pixel-art-fundamentals-specialist/# 02
     ...                               # 26 skills total
@@ -45,7 +45,7 @@ pixel-art-master-studio/
 
 ## Skills
 
-- **Master:** `pixel-art-studio-director` — routing, studio modes, production pipeline, QA/delivery.
+- **Master:** `pixel-master` — routing, studio modes, production pipeline, QA/delivery.
 - **Foundation:** art director, fundamentals, palette/color, pixel-style conversion.
 - **Characters/world:** character, creature, prop/item, environment, tileset, isometric, key art.
 - **UI/type:** UI/icon, typography/logo.
@@ -67,7 +67,7 @@ See `SKILL-INDEX.md`.
 1. Install the pack (see `INSTALL.md`).
 2. Ask:
 
-> Use `pixel-art-studio-director` to plan and produce a 32x32 side-view character with idle/walk/attack animations for Godot 4.
+> Use `pixel-master` to plan and produce a 32x32 side-view character with idle/walk/attack animations for Godot 4.
 
 Or invoke a specialist directly:
 

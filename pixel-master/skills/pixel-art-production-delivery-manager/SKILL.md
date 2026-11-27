@@ -58,7 +58,7 @@ Apply the pack's `../../shared/PIXEL_ART_STANDARDS.md` when installed, plus thes
 
 ## Workflow Steps
 
-1. **Audit Completeness Against Scope**: Cross-check every planned asset from `pixel-art-studio-director` against `exports/` and confirm every item has a `PASS` verdict from `pixel-art-qa-art-review`.
+1. **Audit Completeness Against Scope**: Cross-check every planned asset from `pixel-master` against `exports/` and confirm every item has a `PASS` verdict from `pixel-art-qa-art-review`.
 2. **Normalize Structure & Naming**: Verify all filenames follow conventions, strip temporary scratch files (`.tmp`, `_backup`, `final_v2_real`), and verify native source files match exported PNGs.
 3. **Generate Machine-Readable Catalog**: Build `ASSET_CATALOG.json` listing each asset's ID, category, relative path, dimensions, frame count, pivot, palette ref, and SHA-256 checksum or version.
 4. **Write Handoff README**: Document base resolution, tile size, PPU, pivot conventions, recommended engine import settings, and contact/license notes.

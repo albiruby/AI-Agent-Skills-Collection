@@ -70,7 +70,7 @@ for folder in sorted(p for p in SKILLS.iterdir() if p.is_dir()):
 
 if len(found) != 26:
     errors.append(f"expected 26 skills, found {len(found)}")
-if "pixel-art-studio-director" not in found:
+if "pixel-master" not in found:
     errors.append("master skill missing")
 
 for json_file in ROOT.rglob("*.json"):
