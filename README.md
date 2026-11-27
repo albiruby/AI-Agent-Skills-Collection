@@ -2,10 +2,10 @@
 
 [![Validate frontmatter](https://github.com/albiruby/AI-Agent-Skills-Collection/actions/workflows/validate.yml/badge.svg)](https://github.com/albiruby/AI-Agent-Skills-Collection/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-185-brightgreen.svg)](#packs)
+[![Skills](https://img.shields.io/badge/skills-211-brightgreen.svg)](#packs)
 [![SKILL.md format](https://img.shields.io/badge/format-SKILL.md-orange.svg)](SKILL_TEMPLATE.md)
 
-A curated collection of **185 skills** for AI coding agents and assistants, built on the open [Agent Skills](SKILL_TEMPLATE.md) format (`SKILL.md` + YAML frontmatter). Each skill gives an agent a clear role, a step-by-step workflow, and a required output structure for one kind of task — and its `description` carries explicit **"Use when…"** triggers so the right skill loads at the right time.
+A curated collection of **211 skills** for AI coding agents and assistants, built on the open [Agent Skills](SKILL_TEMPLATE.md) format (`SKILL.md` + YAML frontmatter). Each skill gives an agent a clear role, a step-by-step workflow, and a required output structure for one kind of task — and its `description` carries explicit **"Use when…"** triggers so the right skill loads at the right time.
 
 ## Quick start
 
@@ -34,6 +34,7 @@ bash blender-3d-production-suite/install.sh /path/to/your/skills-root
 | [`blender-3d-production-suite`](blender-3d-production-suite/) | 19 | Professional Blender production: modeling, sculpting, retopo, UV/baking, materials, rigging, animation, FX, lighting, rendering, Python automation, export |
 | [`gemini-image-consistency-skills`](gemini-image-consistency-skills/) | 18 | Consistent Gemini image generation: locked style/theme/palette/character bibles, master prompts, reference-image workflow, batch manifests, QA review |
 | [`aseprite-master`](aseprite-master/) | 18 | Pixel-art production: sprite generation, frame-by-frame animation, art direction, tilesets, VFX, MCP automation, QA, game-engine export |
+| [`pixel-art-master-studio`](pixel-art-master-studio/) | 26 | Complete pixel-art studio: art direction, characters, environments/tilesets, UI, animation, VFX, atlases, 3D-to-pixel, shaders, engine integration, QA, delivery |
 | [`human-cognition-agency-skills`](human-cognition-agency-skills/) | 8 | Proactive-but-bounded agent behavior: cognition, decision-making, agency, verification, metacognition, adaptive learning, social intelligence |
 | [`production-readiness-audit-skills`](production-readiness-audit-skills/) | 19 | Pre-launch audits of web projects: discovery & scope, codebase architecture, security, privacy, performance, testing, deployment, monitoring, cost, reporting, and verified remediation |
 | [`project-docs-skills`](project-docs-skills/) | 10 | Project documentation and visual assets: context analysis, docs architecture, technical writing, clean screenshots, store previews, QA, and release packaging |

@@ -1,0 +1,306 @@
+{
+  "package": "pixel-art-master-studio",
+  "version": "2.0.0",
+  "architecture": "1 Master Orchestrator + 25 Specialist Skills (merged Gemini + GPT)",
+  "total_skills": 26,
+  "paradigms": [
+    "authentic-pixel-art",
+    "pixel-style"
+  ],
+  "studio_modes": [
+    {
+      "id": "complete-pixel-art-game",
+      "name": "Complete Pixel Art Game Mode",
+      "skills": [
+        "pixel-art-studio-director",
+        "pixel-art-art-director",
+        "pixel-art-fundamentals-specialist",
+        "pixel-art-palette-color-specialist",
+        "pixel-art-character-artist",
+        "pixel-art-creature-artist",
+        "pixel-art-prop-item-artist",
+        "pixel-art-environment-artist",
+        "pixel-art-tileset-level-artist",
+        "pixel-art-ui-icon-designer",
+        "pixel-art-typography-logo-designer",
+        "pixel-art-animation-director",
+        "pixel-art-sprite-animator",
+        "pixel-art-vfx-artist",
+        "pixel-art-spritesheet-atlas-architect",
+        "pixel-art-game-engine-integration",
+        "pixel-art-optimization-performance",
+        "pixel-art-qa-art-review",
+        "pixel-art-production-delivery-manager"
+      ]
+    },
+    {
+      "id": "character-studio",
+      "name": "Character Studio Mode",
+      "skills": [
+        "pixel-art-studio-director",
+        "pixel-art-art-director",
+        "pixel-art-fundamentals-specialist",
+        "pixel-art-palette-color-specialist",
+        "pixel-art-character-artist",
+        "pixel-art-animation-director",
+        "pixel-art-sprite-animator",
+        "pixel-art-spritesheet-atlas-architect",
+        "pixel-art-qa-art-review"
+      ]
+    },
+    {
+      "id": "environment-studio",
+      "name": "Environment Studio Mode",
+      "skills": [
+        "pixel-art-studio-director",
+        "pixel-art-art-director",
+        "pixel-art-palette-color-specialist",
+        "pixel-art-environment-artist",
+        "pixel-art-tileset-level-artist",
+        "pixel-art-prop-item-artist",
+        "pixel-art-isometric-artist",
+        "pixel-art-vfx-artist",
+        "pixel-art-qa-art-review"
+      ]
+    },
+    {
+      "id": "pixel-ui-studio",
+      "name": "Pixel UI Studio Mode",
+      "skills": [
+        "pixel-art-studio-director",
+        "pixel-art-art-director",
+        "pixel-art-palette-color-specialist",
+        "pixel-art-ui-icon-designer",
+        "pixel-art-typography-logo-designer",
+        "pixel-art-sprite-animator",
+        "pixel-art-qa-art-review"
+      ]
+    },
+    {
+      "id": "3d-to-pixel-studio",
+      "name": "3D-to-Pixel Studio Mode",
+      "skills": [
+        "pixel-art-studio-director",
+        "pixel-art-art-director",
+        "pixel-style-conversion-specialist",
+        "pixel-art-palette-color-specialist",
+        "pixel-art-3d-render-pipeline-specialist",
+        "pixel-art-shader-postprocess-specialist",
+        "pixel-art-spritesheet-atlas-architect",
+        "pixel-art-game-engine-integration",
+        "pixel-art-qa-art-review"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "number": "00",
+      "id": "pixel-art-studio-director",
+      "group": "Master Orchestrator",
+      "path": "skills/pixel-art-studio-director/SKILL.md"
+    },
+    {
+      "number": "01",
+      "id": "pixel-art-art-director",
+      "group": "A. Pixel Art Fundamentals & Art Direction",
+      "path": "skills/pixel-art-art-director/SKILL.md"
+    },
+    {
+      "number": "02",
+      "id": "pixel-art-fundamentals-specialist",
+      "group": "A. Pixel Art Fundamentals & Art Direction",
+      "path": "skills/pixel-art-fundamentals-specialist/SKILL.md"
+    },
+    {
+      "number": "03",
+      "id": "pixel-art-palette-color-specialist",
+      "group": "A. Pixel Art Fundamentals & Art Direction",
+      "path": "skills/pixel-art-palette-color-specialist/SKILL.md"
+    },
+    {
+      "number": "04",
+      "id": "pixel-style-conversion-specialist",
+      "group": "A. Pixel Art Fundamentals & Art Direction",
+      "path": "skills/pixel-style-conversion-specialist/SKILL.md"
+    },
+    {
+      "number": "05",
+      "id": "pixel-art-character-artist",
+      "group": "B. Character & Asset Creation",
+      "path": "skills/pixel-art-character-artist/SKILL.md"
+    },
+    {
+      "number": "06",
+      "id": "pixel-art-creature-artist",
+      "group": "B. Character & Asset Creation",
+      "path": "skills/pixel-art-creature-artist/SKILL.md"
+    },
+    {
+      "number": "07",
+      "id": "pixel-art-prop-item-artist",
+      "group": "B. Character & Asset Creation",
+      "path": "skills/pixel-art-prop-item-artist/SKILL.md"
+    },
+    {
+      "number": "08",
+      "id": "pixel-art-environment-artist",
+      "group": "B. Character & Asset Creation",
+      "path": "skills/pixel-art-environment-artist/SKILL.md"
+    },
+    {
+      "number": "09",
+      "id": "pixel-art-tileset-level-artist",
+      "group": "B. Character & Asset Creation",
+      "path": "skills/pixel-art-tileset-level-artist/SKILL.md"
+    },
+    {
+      "number": "10",
+      "id": "pixel-art-isometric-artist",
+      "group": "B. Character & Asset Creation",
+      "path": "skills/pixel-art-isometric-artist/SKILL.md"
+    },
+    {
+      "number": "11",
+      "id": "pixel-art-illustration-keyart-artist",
+      "group": "B. Character & Asset Creation",
+      "path": "skills/pixel-art-illustration-keyart-artist/SKILL.md"
+    },
+    {
+      "number": "12",
+      "id": "pixel-art-ui-icon-designer",
+      "group": "C. UI, Icon & Typography",
+      "path": "skills/pixel-art-ui-icon-designer/SKILL.md"
+    },
+    {
+      "number": "13",
+      "id": "pixel-art-typography-logo-designer",
+      "group": "C. UI, Icon & Typography",
+      "path": "skills/pixel-art-typography-logo-designer/SKILL.md"
+    },
+    {
+      "number": "14",
+      "id": "pixel-art-animation-director",
+      "group": "D. Animation & Visual Effects",
+      "path": "skills/pixel-art-animation-director/SKILL.md"
+    },
+    {
+      "number": "15",
+      "id": "pixel-art-sprite-animator",
+      "group": "D. Animation & Visual Effects",
+      "path": "skills/pixel-art-sprite-animator/SKILL.md"
+    },
+    {
+      "number": "16",
+      "id": "pixel-art-vfx-artist",
+      "group": "D. Animation & Visual Effects",
+      "path": "skills/pixel-art-vfx-artist/SKILL.md"
+    },
+    {
+      "number": "17",
+      "id": "pixel-art-spritesheet-atlas-architect",
+      "group": "E. Technical Art & Production Pipeline",
+      "path": "skills/pixel-art-spritesheet-atlas-architect/SKILL.md"
+    },
+    {
+      "number": "18",
+      "id": "pixel-art-editor-operator",
+      "group": "E. Technical Art & Production Pipeline",
+      "path": "skills/pixel-art-editor-operator/SKILL.md"
+    },
+    {
+      "number": "19",
+      "id": "pixel-art-procedural-automation-engineer",
+      "group": "E. Technical Art & Production Pipeline",
+      "path": "skills/pixel-art-procedural-automation-engineer/SKILL.md"
+    },
+    {
+      "number": "20",
+      "id": "pixel-art-3d-render-pipeline-specialist",
+      "group": "E. Technical Art & Production Pipeline",
+      "path": "skills/pixel-art-3d-render-pipeline-specialist/SKILL.md"
+    },
+    {
+      "number": "21",
+      "id": "pixel-art-shader-postprocess-specialist",
+      "group": "E. Technical Art & Production Pipeline",
+      "path": "skills/pixel-art-shader-postprocess-specialist/SKILL.md"
+    },
+    {
+      "number": "22",
+      "id": "pixel-art-game-engine-integration",
+      "group": "E. Technical Art & Production Pipeline",
+      "path": "skills/pixel-art-game-engine-integration/SKILL.md"
+    },
+    {
+      "number": "23",
+      "id": "pixel-art-optimization-performance",
+      "group": "E. Technical Art & Production Pipeline",
+      "path": "skills/pixel-art-optimization-performance/SKILL.md"
+    },
+    {
+      "number": "24",
+      "id": "pixel-art-qa-art-review",
+      "group": "E. Technical Art & Production Pipeline",
+      "path": "skills/pixel-art-qa-art-review/SKILL.md"
+    },
+    {
+      "number": "25",
+      "id": "pixel-art-production-delivery-manager",
+      "group": "E. Technical Art & Production Pipeline",
+      "path": "skills/pixel-art-production-delivery-manager/SKILL.md"
+    }
+  ],
+  "merged_from": [
+    "pixel-art-master-studio-gemini v1.0.0",
+    "pixel-art-master-studio-universal-GPT v1.0.0"
+  ],
+  "resources": {
+    "shared": [
+      "shared/PIXEL_ART_STANDARDS.md"
+    ],
+    "references": [
+      "references/ai-pixel-generation-and-cleanup.md",
+      "references/animation-production-guide.md",
+      "references/asset-delivery-and-naming.md",
+      "references/engine-integration-matrix.md",
+      "references/palette-and-ramp-guide.md",
+      "references/pixel-art-quality-checklist.md",
+      "references/tileset-and-autotile-guide.md"
+    ],
+    "templates": [
+      "templates/asset-manifest.csv",
+      "templates/engine-validation.md",
+      "templates/palette-spec.md",
+      "templates/pixel-art-production-brief.md",
+      "templates/qa-report.md",
+      "templates/sprite-animation-plan.md",
+      "templates/sprite-atlas-spec.md",
+      "templates/style-bible.md",
+      "templates/tileset-spec.md"
+    ],
+    "scripts": [
+      "scripts/palette_ramp.py",
+      "scripts/pixel_art_qa.py",
+      "scripts/validate_package.py"
+    ],
+    "examples": [
+      "examples/3d-to-pixel-pipeline.md",
+      "examples/README.md",
+      "examples/ai-image-to-pixel.md",
+      "examples/character-complete-pipeline.md",
+      "examples/environment-tileset.md"
+    ],
+    "evals": [
+      "evals/README.md",
+      "evals/cases/01-character-animation.md",
+      "evals/cases/02-tileset-engine.md",
+      "evals/cases/03-ai-cleanup.md",
+      "evals/scorecard.md"
+    ]
+  },
+  "requirements": {
+    "python": ">=3.9",
+    "pillow": "required for image QA",
+    "numpy": "not required"
+  }
+}
