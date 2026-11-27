@@ -1,0 +1,76 @@
+import Toybox.Activity;
+import Toybox.FitContributor;
+import Toybox.Graphics;
+import Toybox.Lang;
+import Toybox.WatchUi;
+
+class UltimateDataFieldView extends WatchUi.DataField {
+    private var _hr as Number or Null = null;
+    private var _power as Number or Null = null;
+    private var _carbBurnGrams as Float = 0.0f;
+    private var _carbField as FitContributor.Field or Null = null;
+    private var _isCompact as Boolean = false;
+
+    public function initialize() {
+        DataField.initialize();
+        _carbField = createField(
+            "carb_burn",
+            0,
+            FitContributor.DATA_TYPE_FLOAT,
+            {:mesgType => FitContributor.MESG_TYPE_RECORD, :units => "g"}
+        );
+    }
+
+    public function onLayout(dc as Dc) as Void {
+        _isCompact = (dc.getHeight() < 90 || dc.getWidth() < 130);
+    }
+
+    public function compute(info as Activity.Info) as Void {
+        if (info has :currentHeartRate && info.currentHeartRate != null) {
+            _hr = info.currentHeartRate;
+        } else {
+            _hr = null;
+        }
+
+        if (info has :currentPower && info.currentPower != null) {
+            _power = info.currentPower;
+        } else {
+            _power = null;
+        }
+
+        if (info has :calories && info.calories != null) {
+            _carbBurnGrams = info.calories.toFloat() * 0.18f;
+            if (_carbField != null) {
+                _carbField.setData(_carbBurnGrams);
+            }
+        }
+    }
+
+    public function onUpdate(dc as Dc) as Void {
+        var bgColor = getBackgroundColor();
+        var fgColor = (bgColor == Graphics.COLOR_BLACK) ? Graphics.COLOR_WHITE : Graphics.COLOR_BLACK;
+        dc.setColor(fgColor, bgColor);
+        dc.clear();
+
+        var w = dc.getWidth();
+        var h = dc.getHeight();
+        var cx = w / 2;
+
+        var carbStr = _carbBurnGrams.format("%.1f") + "g";
+        var hrStr = (_hr != null) ? (_hr.toString() + " bpm") : "-- bpm";
+
+        dc.setColor(fgColor, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(cx, 6, Graphics.FONT_XTINY, "BIO-CARB", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(
+            cx,
+            h / 2,
+            _isCompact ? Graphics.FONT_MEDIUM : Graphics.FONT_NUMBER_MEDIUM,
+            carbStr,
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+        );
+
+        if (!_isCompact) {
+            dc.drawText(cx, h - 22, Graphics.FONT_XTINY, hrStr, Graphics.TEXT_JUSTIFY_CENTER);
+        }
+    }
+}

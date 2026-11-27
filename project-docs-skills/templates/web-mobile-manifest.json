@@ -1,0 +1,54 @@
+{
+  "theme": {
+    "bg_top": "#0F172A",
+    "bg_bottom": "#020617",
+    "title_color": "#F8FAFC",
+    "subtitle_color": "#CBD5E1",
+    "caption_color": "#38BDF8",
+    "muted_color": "#94A3B8",
+    "accent": "#6366F1",
+    "decor": "dots",
+    "font_bold": null,
+    "font_regular": null
+  },
+  "assets": [
+    {
+      "output": "GITHUB_SOCIAL_1280x640.png",
+      "layout": "hero_overlap",
+      "width": 1280,
+      "height": 640,
+      "eyebrow": "OPEN SOURCE / WEB APP",
+      "title": "Project Name",
+      "subtitle": "Fast, focused workflow built for modern teams.",
+      "highlight": "TypeScript - Responsive UI - Local-First",
+      "meta": "MIT License - Ready to deploy",
+      "images": [
+        { "src": "../assets/clean/web_dashboard.png" }
+      ]
+    },
+    {
+      "output": "OG_1200x630.png",
+      "layout": "hero_overlap",
+      "width": 1200,
+      "height": 630,
+      "eyebrow": "PRODUCT PREVIEW",
+      "title": "Project Name",
+      "subtitle": "Everything you need in one clean workspace.",
+      "images": [
+        { "src": "../assets/clean/web_dashboard.png" }
+      ]
+    },
+    {
+      "output": "MOBILE_SCREEN_1.jpg",
+      "layout": "mobile_panel",
+      "width": 1080,
+      "height": 1920,
+      "eyebrow": "MOBILE EXPERIENCE",
+      "title": "Track progress in seconds",
+      "subtitle": "Clean native controls built for one-handed use.",
+      "images": [
+        { "src": "../assets/clean/mobile_home.png" }
+      ]
+    }
+  ]
+}

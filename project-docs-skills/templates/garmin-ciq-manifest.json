@@ -1,0 +1,57 @@
+{
+  "theme": {
+    "bg_top": "#0D2452",
+    "bg_bottom": "#040A18",
+    "title_color": "#5CE1FF",
+    "subtitle_color": "#F1F5F9",
+    "caption_color": "#FACC15",
+    "muted_color": "#94A3B8",
+    "accent": "#38BDF8",
+    "decor": "pixel-squares",
+    "font_bold": null,
+    "font_regular": null
+  },
+  "assets": [
+    {
+      "output": "COVER_500x500.jpg",
+      "layout": "cover",
+      "width": 500,
+      "height": 500,
+      "title": "APP TITLE",
+      "subtitle": "SHORT TAGLINE - CORE BENEFIT",
+      "images": [
+        { "src": "../assets/clean/screen_main.png" }
+      ]
+    },
+    {
+      "output": "HERO_1440x720.jpg",
+      "layout": "hero_overlap",
+      "width": 1440,
+      "height": 720,
+      "eyebrow": "GARMIN CONNECT IQ APP",
+      "title": "APP TITLE",
+      "subtitle": "Clear one-line value proposition for your watch.",
+      "highlight": "Key metric 1 - Key metric 2 - Key metric 3",
+      "meta": "Supported features - offline ready - low battery",
+      "images": [
+        { "src": "../assets/clean/screen_left.png" },
+        { "src": "../assets/clean/screen_main.png" },
+        { "src": "../assets/clean/screen_right.png" }
+      ]
+    },
+    {
+      "output": "SCREEN_1_overview.jpg",
+      "layout": "feature_showcase",
+      "width": 1440,
+      "height": 900,
+      "eyebrow": "CORE EXPERIENCE",
+      "title": "Designed for glanceable clarity",
+      "subtitle": "Switch modes anytime without losing progress",
+      "images": [
+        { "src": "../assets/clean/screen_left.png", "caption": "Mode One" },
+        { "src": "../assets/clean/screen_main.png", "caption": "Mode Two" },
+        { "src": "../assets/clean/screen_right.png", "caption": "Mode Three" }
+      ]
+    }
+  ]
+}

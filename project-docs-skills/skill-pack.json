@@ -1,0 +1,71 @@
+{
+  "package": "project-documentation-visual-assets",
+  "version": "1.0.0",
+  "entry_skill": "project-docs-skills",
+  "skills": [
+    { "name": "project-docs-skills", "path": "skills/project-docs-skills/SKILL.md", "role": "orchestrator" },
+    { "name": "project-context-analyzer", "path": "skills/project-context-analyzer/SKILL.md", "role": "specialist" },
+    { "name": "project-docs-planner", "path": "skills/project-docs-planner/SKILL.md", "role": "specialist" },
+    { "name": "project-tech-docs-author", "path": "skills/project-tech-docs-author/SKILL.md", "role": "specialist" },
+    { "name": "visual-asset-capture", "path": "skills/visual-asset-capture/SKILL.md", "role": "specialist" },
+    { "name": "clean-screenshot-slicer", "path": "skills/clean-screenshot-slicer/SKILL.md", "role": "specialist" },
+    { "name": "store-preview-asset-builder", "path": "skills/store-preview-asset-builder/SKILL.md", "role": "specialist" },
+    { "name": "product-store-copywriter", "path": "skills/product-store-copywriter/SKILL.md", "role": "specialist" },
+    { "name": "docs-visual-qa-auditor", "path": "skills/docs-visual-qa-auditor/SKILL.md", "role": "specialist" },
+    { "name": "docs-release-packager", "path": "skills/docs-release-packager/SKILL.md", "role": "specialist" }
+  ],
+  "references": [
+    "references/documentation-principles.md",
+    "references/documentation-standards.md",
+    "references/documentation-architecture-guide.md",
+    "references/project-type-matrix.md",
+    "references/platform-requirements-adapter.md",
+    "references/tool-capability-contract.md",
+    "references/visual-asset-guidelines.md",
+    "references/screenshot-capture-recipes.md",
+    "references/slicing-qa-rules.md",
+    "references/store-asset-specs.md",
+    "references/store-copy-guidelines.md",
+    "references/visual-composition-guide.md",
+    "references/qa-checklist.md",
+    "references/harness-compatibility.md",
+    "references/mermaid-diagram-guide.md",
+    "references/garmin-connect-iq-playbook.md"
+  ],
+  "templates": [
+    "templates/README-template.md",
+    "templates/ARCHITECTURE-template.md",
+    "templates/API-template.md",
+    "templates/USER-GUIDE-template.md",
+    "templates/DEPLOYMENT-template.md",
+    "templates/TROUBLESHOOTING-template.md",
+    "templates/CHANGELOG-template.md",
+    "templates/CONTRIBUTING-template.md",
+    "templates/ADR-template.md",
+    "templates/docs-plan-template.md",
+    "templates/screenshot-shotlist-template.md",
+    "templates/platform-requirements-record.md",
+    "templates/asset-manifest.csv",
+    "templates/garmin-ciq-manifest.json",
+    "templates/web-mobile-manifest.json",
+    "templates/store-listing-template.md",
+    "templates/release-notes-template.md",
+    "templates/qa-report-template.md"
+  ],
+  "examples": [
+    "examples/garmin-connect-iq-watch-face.md",
+    "examples/web-saas-dashboard.md",
+    "examples/mobile-app-release.md",
+    "examples/cli-api-library.md"
+  ],
+  "evals": [
+    "evals/cases/01-garmin-visual-pack.md",
+    "evals/cases/02-web-docs-pack.md",
+    "evals/cases/03-mobile-release.md"
+  ],
+  "requirements": {
+    "python": ">=3.9",
+    "pillow": "required for scripts",
+    "numpy": "optional"
+  }
+}
