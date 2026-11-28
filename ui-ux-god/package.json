@@ -1,0 +1,12 @@
+{
+  "name": "ui-ux-god",
+  "version": "1.0.0",
+  "description": "Evidence-based UI/UX audit, micro-detail repair, accessibility, responsive, platform, and verification studio",
+  "skills": 32,
+  "master": "ui-ux-god",
+  "specialists": 31,
+  "license": "MIT",
+  "scripts": {
+    "validate": "python scripts/validate_package.py"
+  }
+}

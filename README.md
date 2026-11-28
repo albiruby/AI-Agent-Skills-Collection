@@ -2,10 +2,10 @@
 
 [![Validate frontmatter](https://github.com/albiruby/AI-Agent-Skills-Collection/actions/workflows/validate.yml/badge.svg)](https://github.com/albiruby/AI-Agent-Skills-Collection/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-211-brightgreen.svg)](#packs)
+[![Skills](https://img.shields.io/badge/skills-243-brightgreen.svg)](#packs)
 [![SKILL.md format](https://img.shields.io/badge/format-SKILL.md-orange.svg)](SKILL_TEMPLATE.md)
 
-A curated collection of **211 skills** for AI coding agents and assistants, built on the open [Agent Skills](SKILL_TEMPLATE.md) format (`SKILL.md` + YAML frontmatter). Each skill gives an agent a clear role, a step-by-step workflow, and a required output structure for one kind of task — and its `description` carries explicit **"Use when…"** triggers so the right skill loads at the right time.
+A curated collection of **243 skills** for AI coding agents and assistants, built on the open [Agent Skills](SKILL_TEMPLATE.md) format (`SKILL.md` + YAML frontmatter). Each skill gives an agent a clear role, a step-by-step workflow, and a required output structure for one kind of task — and its `description` carries explicit **"Use when…"** triggers so the right skill loads at the right time.
 
 ## Quick start
 
@@ -40,6 +40,7 @@ bash blender-3d-production-suite/install.sh /path/to/your/skills-root
 | [`project-docs-skills`](project-docs-skills/) | 10 | Project documentation and visual assets: context analysis, docs architecture, technical writing, clean screenshots, store previews, QA, and release packaging |
 | [`microsoft-office-ultimate-suite`](microsoft-office-ultimate-suite/) | 42 | Professional Microsoft Office and Microsoft 365 work: Word, Excel, PowerPoint, Outlook, OneNote, Access, SharePoint/Teams, Copilot governance, automation, accessibility, security, and QA |
 | [`website-blindspot-auditor`](website-blindspot-auditor/) | 1 | Adaptive, evidence-driven audits with stack adapters, mode runbooks, and an eval harness: edge cases, cross-layer failures, business-requirement gaps, security/privacy risks, operational weaknesses, and improvement opportunities |
+| [`ui-ux-god`](ui-ux-god/) | 32 | Evidence-based UI/UX audit and repair: layout geometry, micro-detail, design systems, responsive, interaction, WCAG 2.2, mobile/desktop/CLI, root-cause repair, regression, and reporting |
 | [`ai-video-generation`](ai-video-generation/) | 1 (+24 subskills) | AI video production: briefs, prompt engineering, references, camera & continuity, physics/interaction validation, frame-by-frame QA, failure recovery |
 | [`garmin-connect-iq-development`](garmin-connect-iq-development/) | 1 | Garmin wearables in Monkey C: watch faces, widgets, data fields, sensors, adaptive UI, performance, test matrix, Connect IQ Store readiness |
 | [`garmin-connect-iq-ultimate`](garmin-connect-iq-ultimate/) | 1 | 120 advanced Garmin Connect IQ modules: watch-face lifecycle and AOD, data fields, widgets, sensors, memory, adaptive UI, build, testing, and store export |

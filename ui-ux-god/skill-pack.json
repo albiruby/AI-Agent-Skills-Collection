@@ -1,0 +1,240 @@
+{
+  "name": "ui-ux-god",
+  "version": "1.0.0",
+  "description": "Evidence-based UI/UX audit, micro-detail repair, accessibility, responsive, platform, and verification studio.",
+  "master": "ui-ux-god",
+  "skills": [
+    {
+      "id": "ui-ux-god",
+      "path": "skills/ui-ux-god/SKILL.md",
+      "role": "master",
+      "description": "Master orchestrator for evidence-based UI/UX audits and surgical repairs across web, mobile, desktop, and CLI/TUI. Use when the user asks to audit, inspect, review, polish, or fix a UI/UX, wants micro-defects caught (off-center logos, short dividers, 1px drift, spacing, contrast, responsive bugs), or needs a full audit-to-repair-to-verification workflow with measurable evidence."
+    },
+    {
+      "id": "uiux-audit-evidence-report-writer",
+      "path": "skills/uiux-audit-evidence-report-writer/SKILL.md",
+      "role": "specialist",
+      "description": "Produce actionable UI/UX audit reports with evidence, measurements, severity, reproduction steps, recommendations, and repair status. Use when findings must be documented for engineers, stakeholders, or a release gate, or when audit coverage and limitations need a clear record."
+    },
+    {
+      "id": "uiux-audit-governance-risk-triage",
+      "path": "skills/uiux-audit-governance-risk-triage/SKILL.md",
+      "role": "specialist",
+      "description": "Triage UI/UX findings, set audit scope, manage change risk, protect brand intent, and decide when to fix, defer, or request clarification. Use when findings compete for priority, when a repair is risky or ambiguous, or when audit scope and authorization need explicit decisions."
+    },
+    {
+      "id": "uiux-color-visual-hierarchy-auditor",
+      "path": "skills/uiux-color-visual-hierarchy-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit palette, contrast, semantic color, visual hierarchy, states, and theme behavior without flattening brand expression. Use when colors compete, CTAs lack prominence, dark mode looks harsh, or contrast and semantic states need verification."
+    },
+    {
+      "id": "uiux-content-microcopy-auditor",
+      "path": "skills/uiux-content-microcopy-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit interface language, labels, instructions, error messages, empty states, confirmations, and content clarity. Use when copy is vague, inconsistent, overly technical, or when microcopy must guide users through errors and empty states."
+    },
+    {
+      "id": "uiux-cross-browser-device-auditor",
+      "path": "skills/uiux-cross-browser-device-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit rendering and interaction consistency across browsers, engines, devices, DPRs, operating systems, and input modes. Use when a UI works in one browser but breaks in another, or when Safari/Firefox/Edge/mobile rendering, fonts, scrolling, or input need verification."
+    },
+    {
+      "id": "uiux-cross-platform-app-auditor",
+      "path": "skills/uiux-cross-platform-app-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit non-web UI beyond standard browsers: cross-platform frameworks, wearables, TV, embedded displays, and CLI/TUI programs. Use when checking Flutter/React Native platform quirks, safe areas, HiDPI, window constraints, terminal box-drawing, or platform-native ergonomics."
+    },
+    {
+      "id": "uiux-css-layout-root-cause-specialist",
+      "path": "skills/uiux-css-layout-root-cause-specialist/SKILL.md",
+      "role": "specialist",
+      "description": "Diagnose and repair CSS/layout root causes: flexbox, grid, sizing, overflow, stacking contexts, positioning, and responsive constraints. Use when a layout bug resists surface patches, when `!important` is spreading, or when the parent layout must be fixed properly."
+    },
+    {
+      "id": "uiux-design-reference-diff-auditor",
+      "path": "skills/uiux-design-reference-diff-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Compare a live implementation against design references, screenshots, mockups, or design-system specs and quantify deviations. Use when a build must match Figma or a visual reference, or when pixel and geometry differences need evidence."
+    },
+    {
+      "id": "uiux-desktop-app-auditor",
+      "path": "skills/uiux-desktop-app-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit native desktop applications across Windows, macOS, and Linux for layout, window behavior, keyboard conventions, HiDPI scaling, accessibility, and interaction quality. Use when reviewing Electron/Tauri/Qt/WPF/WinUI/AppKit apps or desktop-specific window and DPI issues."
+    },
+    {
+      "id": "uiux-e2e-interaction-test-engineer",
+      "path": "skills/uiux-e2e-interaction-test-engineer/SKILL.md",
+      "role": "specialist",
+      "description": "Design and execute end-to-end tests for critical UI tasks, state transitions, navigation, forms, and failure recovery. Use when a flow needs repeatable browser or device verification, or when a repair must be proven end to end."
+    },
+    {
+      "id": "uiux-forms-validation-auditor",
+      "path": "skills/uiux-forms-validation-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit forms, controls, validation, error messages, input masks, autofill, multi-step flows, and submission feedback. Use when forms reject valid input, errors are vague, labels are missing, or completion and recovery need testing."
+    },
+    {
+      "id": "uiux-frontend-codebase-auditor",
+      "path": "skills/uiux-frontend-codebase-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Trace visible UI defects to frontend structure, component boundaries, CSS, state logic, assets, and framework implementation. Use when the rendered defect needs a code-level root cause, when the same bug repeats across screens, or before planning a repair."
+    },
+    {
+      "id": "uiux-iconography-asset-auditor",
+      "path": "skills/uiux-iconography-asset-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit icons, logos, illustrations, SVGs, and interface assets for alignment, legibility, consistency, sizing, and semantic clarity. Use when icons look mismatched, logos sit off-center, SVG padding distorts alignment, or asset fidelity is suspect."
+    },
+    {
+      "id": "uiux-imagery-media-auditor",
+      "path": "skills/uiux-imagery-media-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit images, video, avatars, thumbnails, and media treatments for crop, focal point, resolution, loading, and visual consistency. Use when photos are stretched, crops cut faces, media feels inconsistent, or image performance and fallbacks need review."
+    },
+    {
+      "id": "uiux-keyboard-assistive-tech-auditor",
+      "path": "skills/uiux-keyboard-assistive-tech-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Test keyboard-only operation, focus order, screen-reader semantics, accessible names, announcements, and assistive-technology interaction. Use when verifying tab order, focus traps, custom widgets, ARIA, or screen-reader behavior."
+    },
+    {
+      "id": "uiux-layout-geometry-auditor",
+      "path": "skills/uiux-layout-geometry-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Measure rendered layout geometry, grid alignment, centering, dividers, spacing, overflow, clipping, and sibling symmetry. Use when auditing page structure, catching off-center logos or headers, incomplete divider lines, uneven cards, broken grids, horizontal scroll, or verifying layout fixes with DOM and pixel measurements."
+    },
+    {
+      "id": "uiux-live-interface-inspector",
+      "path": "skills/uiux-live-interface-inspector/SKILL.md",
+      "role": "specialist",
+      "description": "Map and capture real rendered interfaces before judging them. Use when starting a UI/UX audit, when routes/screens/states/viewports are unknown, or when you need a coverage inventory, baseline screenshots, DOM/accessibility evidence, and an honest list of what could not be inspected."
+    },
+    {
+      "id": "uiux-microdetail-polish-specialist",
+      "path": "skills/uiux-microdetail-polish-specialist/SKILL.md",
+      "role": "specialist",
+      "description": "Detect and polish high-salience micro-defects: optical centering, 1px misalignment, divider length, border and radius joins, icon offsets, baseline drift, and pixel-level spacing. Use when the macro layout is stable and the interface needs flagship-grade finish, or when the user reports small visual imperfections."
+    },
+    {
+      "id": "uiux-mobile-app-auditor",
+      "path": "skills/uiux-mobile-app-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit native and hybrid mobile apps for platform conventions, touch behavior, safe areas, responsive screens, accessibility, navigation, and device conditions. Use when reviewing iOS/Android/Flutter/React Native UI, simulator or device evidence, or mobile-specific failures."
+    },
+    {
+      "id": "uiux-motion-animation-auditor",
+      "path": "skills/uiux-motion-animation-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit transitions, animations, feedback motion, timing, easing, loading indicators, and reduced-motion behavior. Use when motion feels janky, distracting, too slow, or when verifying accessibility and performance of animations."
+    },
+    {
+      "id": "uiux-navigation-information-architecture",
+      "path": "skills/uiux-navigation-information-architecture/SKILL.md",
+      "role": "specialist",
+      "description": "Audit navigation structure, labels, hierarchy, wayfinding, breadcrumbs, search, and information scent. Use when users get lost, menus feel flat, labels are ambiguous, or navigation needs restructuring."
+    },
+    {
+      "id": "uiux-performance-perceived-speed-auditor",
+      "path": "skills/uiux-performance-perceived-speed-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit loading performance and perceived responsiveness: LCP, INP, CLS, feedback latency, rendering, assets, and interaction delays. Use when a UI feels slow, when Core Web Vitals regress, or when loading and feedback states need measurement."
+    },
+    {
+      "id": "uiux-post-repair-verification-engineer",
+      "path": "skills/uiux-post-repair-verification-engineer/SKILL.md",
+      "role": "specialist",
+      "description": "Verify that UI/UX fixes resolve the reported defect without regressions across screens, states, breakpoints, and platforms. Use when a repair has been implemented and must be proven, when a regression gate is needed, or when a finding's status must be evidence-backed before release."
+    },
+    {
+      "id": "uiux-responsive-interaction-auditor",
+      "path": "skills/uiux-responsive-interaction-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit responsive behavior, interactive states, touch targets, focus visibility, and practical accessibility on rendered interfaces. Use when checking the 9 mandatory UI states, mobile ergonomics, keyboard focus, hover/pressed/disabled feedback, or responsive interaction bugs."
+    },
+    {
+      "id": "uiux-responsive-layout-auditor",
+      "path": "skills/uiux-responsive-layout-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit responsive and adaptive layouts across viewports, orientation, zoom, text scaling, and input modes. Use when checking breakpoint failures, mobile overflow, cramped tablets, ultra-wide containment, or when a layout works on desktop but breaks on smaller screens."
+    },
+    {
+      "id": "uiux-surgical-repair-engineer",
+      "path": "skills/uiux-surgical-repair-engineer/SKILL.md",
+      "role": "specialist",
+      "description": "Implement verified UI repairs at the correct level and prove them with closed-loop re-render and re-measure. Use when an audit has produced verified findings and the user authorizes repair, when a fix must preserve behavior and design-system consistency, or when you need before/after evidence and a regression gate."
+    },
+    {
+      "id": "uiux-typography-readability-auditor",
+      "path": "skills/uiux-typography-readability-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit type choice, scale, hierarchy, line length, wrapping, line height, weights, and readability across languages and screens. Use when text feels cramped, inconsistent, or hard to read, or when verifying typography before launch."
+    },
+    {
+      "id": "uiux-user-flow-usability-auditor",
+      "path": "skills/uiux-user-flow-usability-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Evaluate end-to-end task flows for usability, friction, cognitive load, error recovery, and completion clarity. Use when a signup, checkout, onboarding, or core workflow feels slow, confusing, or hard to recover from."
+    },
+    {
+      "id": "uiux-visual-design-system-auditor",
+      "path": "skills/uiux-visual-design-system-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit visual craft and design-system mathematics: typography hierarchy, contrast, 4/8px rhythm, concentric radii, elevation, icon consistency, and token drift. Use when evaluating visual polish, color harmony, readability, spacing discipline, or when repeated components drift from the system."
+    },
+    {
+      "id": "uiux-visual-regression-engineer",
+      "path": "skills/uiux-visual-regression-engineer/SKILL.md",
+      "role": "specialist",
+      "description": "Build and operate visual regression checks with stable screenshots, baselines, masks, thresholds, and reviewable diffs. Use when establishing visual test coverage, investigating snapshot failures, or preventing repair regressions."
+    },
+    {
+      "id": "uiux-wcag-accessibility-auditor",
+      "path": "skills/uiux-wcag-accessibility-auditor/SKILL.md",
+      "role": "specialist",
+      "description": "Audit digital interfaces against WCAG 2.2 A/AA and applicable native platform accessibility criteria. Use when checking contrast, semantics, reflow, target size, focus appearance, error identification, or when an accessibility conformance claim must be evidence-backed."
+    }
+  ],
+  "resources": {
+    "shared": [
+      "shared/UIUX_AUDIT_STANDARDS.md"
+    ],
+    "references": [
+      "references/design-laws-formulas.md",
+      "references/evidence-schema.md",
+      "references/micro-defect-catalog.md",
+      "references/performance-budgets.md",
+      "references/platform-capture-matrix.md",
+      "references/platform-ui-standards.md",
+      "references/severity-and-priority.md",
+      "references/state-and-ux-heuristics.md",
+      "references/surgical-fix-patterns.md",
+      "references/tool-capability-matrix.md",
+      "references/visual-regression-playbook.md",
+      "references/wcag22-quick-reference.md"
+    ],
+    "templates": [
+      "templates/audit-report-template.md",
+      "templates/audit-scorecard.md",
+      "templates/coverage-ledger.md",
+      "templates/design-token-inventory.md",
+      "templates/implementation-handoff-template.md",
+      "templates/issue-evidence-template.md",
+      "templates/remediation-backlog.md",
+      "templates/repair-plan-template.md",
+      "templates/ui-qa-checklist.md",
+      "templates/viewport-device-matrix.md"
+    ],
+    "scripts": [
+      "scripts/design_token_audit.mjs",
+      "scripts/dom_geometry_audit.mjs",
+      "scripts/interactive_a11y_audit.mjs",
+      "scripts/pixel_precision_audit.py",
+      "scripts/validate_package.py"
+    ],
+    "examples": [],
+    "evals": []
+  }
+}
